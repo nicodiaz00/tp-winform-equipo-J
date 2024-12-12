@@ -35,16 +35,16 @@
             // dgvArticulos
             // 
             this.dgvArticulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvArticulos.Location = new System.Drawing.Point(88, 58);
+            this.dgvArticulos.Location = new System.Drawing.Point(157, 218);
             this.dgvArticulos.Name = "dgvArticulos";
-            this.dgvArticulos.Size = new System.Drawing.Size(601, 294);
+            this.dgvArticulos.Size = new System.Drawing.Size(747, 294);
             this.dgvArticulos.TabIndex = 0;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1463, 841);
             this.Controls.Add(this.dgvArticulos);
             this.Name = "Form1";
             this.Text = "Form1";
