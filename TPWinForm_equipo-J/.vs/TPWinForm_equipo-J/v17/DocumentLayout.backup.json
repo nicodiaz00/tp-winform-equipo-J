@@ -19,7 +19,7 @@
       "RelativeMoniker": "D:0:0:{9C0B4C65-416D-4BB3-8819-7E970EC08177}|dominio\\dominio.csproj|solutionrelative:dominio\\imagenes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9C0B4C65-416D-4BB3-8819-7E970EC08177}|dominio\\dominio.csproj|c:\\users\\nico\\documents\\c#\\experiencia-universidad\\tp-winform-equipo-j\\tpwinform_equipo-j\\dominio\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9C0B4C65-416D-4BB3-8819-7E970EC08177}|dominio\\dominio.csproj|C:\\Users\\nico\\Documents\\c#\\experiencia-universidad\\tp-winform-equipo-J\\TPWinForm_equipo-J\\dominio\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9C0B4C65-416D-4BB3-8819-7E970EC08177}|dominio\\dominio.csproj|solutionrelative:dominio\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -56,7 +56,7 @@
               "RelativeDocumentMoniker": "negocio\\AccesoDatos.cs",
               "ToolTip": "C:\\Users\\nico\\Documents\\c#\\experiencia-universidad\\tp-winform-equipo-J\\TPWinForm_equipo-J\\negocio\\AccesoDatos.cs",
               "RelativeToolTip": "negocio\\AccesoDatos.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-12T13:45:50.331Z",
               "EditorCaption": ""
@@ -71,8 +71,7 @@
               "RelativeToolTip": "dominio\\Categoria.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T12:17:22.976Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-12T12:17:22.976Z"
             },
             {
               "$type": "Document",
@@ -84,8 +83,7 @@
               "RelativeToolTip": "dominio\\Articulo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T12:09:39.904Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-12T12:09:39.904Z"
             },
             {
               "$type": "Document",
@@ -97,8 +95,7 @@
               "RelativeToolTip": "dominio\\Marcas.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T11:54:06.243Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-12T11:54:06.243Z"
             },
             {
               "$type": "Document",
@@ -110,8 +107,7 @@
               "RelativeToolTip": "dominio\\Imagenes.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T11:53:53.242Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-12T11:53:53.242Z"
             },
             {
               "$type": "Document",
