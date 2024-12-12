@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\nico\\Documents\\c#\\experiencia-universidad\\tp-winform-equipo-J\\TPWinForm_equipo-J\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{95E763F6-4A6D-4E0E-B876-0C16AF645C0B}|negocio\\negocio.csproj|c:\\users\\nico\\documents\\c#\\experiencia-universidad\\tp-winform-equipo-j\\tpwinform_equipo-j\\negocio\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{95E763F6-4A6D-4E0E-B876-0C16AF645C0B}|negocio\\negocio.csproj|solutionrelative:negocio\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{95E763F6-4A6D-4E0E-B876-0C16AF645C0B}|negocio\\negocio.csproj|c:\\users\\nico\\documents\\c#\\experiencia-universidad\\tp-winform-equipo-j\\tpwinform_equipo-j\\negocio\\categorianegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95E763F6-4A6D-4E0E-B876-0C16AF645C0B}|negocio\\negocio.csproj|solutionrelative:negocio\\categorianegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C0B4C65-416D-4BB3-8819-7E970EC08177}|dominio\\dominio.csproj|C:\\Users\\nico\\Documents\\c#\\experiencia-universidad\\tp-winform-equipo-J\\TPWinForm_equipo-J\\dominio\\imagenes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C0B4C65-416D-4BB3-8819-7E970EC08177}|dominio\\dominio.csproj|solutionrelative:dominio\\imagenes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9C0B4C65-416D-4BB3-8819-7E970EC08177}|dominio\\dominio.csproj|C:\\Users\\nico\\Documents\\c#\\experiencia-universidad\\tp-winform-equipo-J\\TPWinForm_equipo-J\\dominio\\marcas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,12 +19,12 @@
       "RelativeMoniker": "D:0:0:{9C0B4C65-416D-4BB3-8819-7E970EC08177}|dominio\\dominio.csproj|solutionrelative:dominio\\articulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9C0B4C65-416D-4BB3-8819-7E970EC08177}|dominio\\dominio.csproj|C:\\Users\\nico\\Documents\\c#\\experiencia-universidad\\tp-winform-equipo-J\\TPWinForm_equipo-J\\dominio\\imagenes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C0B4C65-416D-4BB3-8819-7E970EC08177}|dominio\\dominio.csproj|solutionrelative:dominio\\imagenes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9C0B4C65-416D-4BB3-8819-7E970EC08177}|dominio\\dominio.csproj|C:\\Users\\nico\\Documents\\c#\\experiencia-universidad\\tp-winform-equipo-J\\TPWinForm_equipo-J\\dominio\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9C0B4C65-416D-4BB3-8819-7E970EC08177}|dominio\\dominio.csproj|solutionrelative:dominio\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95E763F6-4A6D-4E0E-B876-0C16AF645C0B}|negocio\\negocio.csproj|c:\\users\\nico\\documents\\c#\\experiencia-universidad\\tp-winform-equipo-j\\tpwinform_equipo-j\\negocio\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95E763F6-4A6D-4E0E-B876-0C16AF645C0B}|negocio\\negocio.csproj|solutionrelative:negocio\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0760F4D3-1D01-41EF-AFC8-799F7375C31B}|gestor-articulos\\gestor-articulos.csproj|C:\\Users\\nico\\Documents\\c#\\experiencia-universidad\\tp-winform-equipo-J\\TPWinForm_equipo-J\\gestor-articulos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -51,12 +55,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "CategoriaNegocio.cs",
+              "DocumentMoniker": "C:\\Users\\nico\\Documents\\c#\\experiencia-universidad\\tp-winform-equipo-J\\TPWinForm_equipo-J\\negocio\\CategoriaNegocio.cs",
+              "RelativeDocumentMoniker": "negocio\\CategoriaNegocio.cs",
+              "ToolTip": "C:\\Users\\nico\\Documents\\c#\\experiencia-universidad\\tp-winform-equipo-J\\TPWinForm_equipo-J\\negocio\\CategoriaNegocio.cs",
+              "RelativeToolTip": "negocio\\CategoriaNegocio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T14:25:16.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "AccesoDatos.cs",
               "DocumentMoniker": "C:\\Users\\nico\\Documents\\c#\\experiencia-universidad\\tp-winform-equipo-J\\TPWinForm_equipo-J\\negocio\\AccesoDatos.cs",
               "RelativeDocumentMoniker": "negocio\\AccesoDatos.cs",
               "ToolTip": "C:\\Users\\nico\\Documents\\c#\\experiencia-universidad\\tp-winform-equipo-J\\TPWinForm_equipo-J\\negocio\\AccesoDatos.cs",
               "RelativeToolTip": "negocio\\AccesoDatos.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-12T13:45:50.331Z",
               "EditorCaption": ""
@@ -71,11 +88,12 @@
               "RelativeToolTip": "dominio\\Categoria.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T12:17:22.976Z"
+              "WhenOpened": "2024-12-12T12:17:22.976Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Articulo.cs",
               "DocumentMoniker": "C:\\Users\\nico\\Documents\\c#\\experiencia-universidad\\tp-winform-equipo-J\\TPWinForm_equipo-J\\dominio\\Articulo.cs",
               "RelativeDocumentMoniker": "dominio\\Articulo.cs",
@@ -83,11 +101,12 @@
               "RelativeToolTip": "dominio\\Articulo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T12:09:39.904Z"
+              "WhenOpened": "2024-12-12T12:09:39.904Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Marcas.cs",
               "DocumentMoniker": "C:\\Users\\nico\\Documents\\c#\\experiencia-universidad\\tp-winform-equipo-J\\TPWinForm_equipo-J\\dominio\\Marcas.cs",
               "RelativeDocumentMoniker": "dominio\\Marcas.cs",
@@ -95,11 +114,12 @@
               "RelativeToolTip": "dominio\\Marcas.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T11:54:06.243Z"
+              "WhenOpened": "2024-12-12T11:54:06.243Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Imagenes.cs",
               "DocumentMoniker": "C:\\Users\\nico\\Documents\\c#\\experiencia-universidad\\tp-winform-equipo-J\\TPWinForm_equipo-J\\dominio\\Imagenes.cs",
               "RelativeDocumentMoniker": "dominio\\Imagenes.cs",
@@ -107,11 +127,12 @@
               "RelativeToolTip": "dominio\\Imagenes.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T11:53:53.242Z"
+              "WhenOpened": "2024-12-12T11:53:53.242Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\nico\\Documents\\c#\\experiencia-universidad\\tp-winform-equipo-J\\TPWinForm_equipo-J\\gestor-articulos\\Program.cs",
               "RelativeDocumentMoniker": "gestor-articulos\\Program.cs",
@@ -123,7 +144,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\nico\\Documents\\c#\\experiencia-universidad\\tp-winform-equipo-J\\TPWinForm_equipo-J\\gestor-articulos\\Form1.cs",
               "RelativeDocumentMoniker": "gestor-articulos\\Form1.cs",
