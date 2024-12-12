@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\ruben\\Documents\\Cursos\\Curso C# Exp Uni\\Repo-tpWinform-equipo-J\\tp-winform-equipo-J\\TPWinForm_equipo-J\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0760F4D3-1D01-41EF-AFC8-799F7375C31B}|gestor-articulos\\gestor-articulos.csproj|C:\\Users\\ruben\\Documents\\Cursos\\Curso C# Exp Uni\\Repo-tpWinform-equipo-J\\tp-winform-equipo-J\\TPWinForm_equipo-J\\gestor-articulos\\marcas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0760F4D3-1D01-41EF-AFC8-799F7375C31B}|gestor-articulos\\gestor-articulos.csproj|solutionrelative:gestor-articulos\\marcas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0760F4D3-1D01-41EF-AFC8-799F7375C31B}|gestor-articulos\\gestor-articulos.csproj|C:\\Users\\ruben\\Documents\\Cursos\\Curso C# Exp Uni\\Repo-tpWinform-equipo-J\\tp-winform-equipo-J\\TPWinForm_equipo-J\\gestor-articulos\\imagenes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0760F4D3-1D01-41EF-AFC8-799F7375C31B}|gestor-articulos\\gestor-articulos.csproj|solutionrelative:gestor-articulos\\imagenes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0760F4D3-1D01-41EF-AFC8-799F7375C31B}|gestor-articulos\\gestor-articulos.csproj|c:\\users\\ruben\\documents\\cursos\\curso c# exp uni\\repo-tpwinform-equipo-j\\tp-winform-equipo-j\\tpwinform_equipo-j\\gestor-articulos\\imagenes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0760F4D3-1D01-41EF-AFC8-799F7375C31B}|gestor-articulos\\gestor-articulos.csproj|solutionrelative:gestor-articulos\\imagenes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0760F4D3-1D01-41EF-AFC8-799F7375C31B}|gestor-articulos\\gestor-articulos.csproj|c:\\users\\ruben\\documents\\cursos\\curso c# exp uni\\repo-tpwinform-equipo-j\\tp-winform-equipo-j\\tpwinform_equipo-j\\gestor-articulos\\marcas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0760F4D3-1D01-41EF-AFC8-799F7375C31B}|gestor-articulos\\gestor-articulos.csproj|solutionrelative:gestor-articulos\\marcas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0760F4D3-1D01-41EF-AFC8-799F7375C31B}|gestor-articulos\\gestor-articulos.csproj|C:\\Users\\ruben\\Documents\\Cursos\\Curso C# Exp Uni\\Repo-tpWinform-equipo-J\\tp-winform-equipo-J\\TPWinForm_equipo-J\\gestor-articulos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -26,24 +26,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Imagenes.cs",
               "DocumentMoniker": "C:\\Users\\ruben\\Documents\\Cursos\\Curso C# Exp Uni\\Repo-tpWinform-equipo-J\\tp-winform-equipo-J\\TPWinForm_equipo-J\\gestor-articulos\\Imagenes.cs",
               "RelativeDocumentMoniker": "gestor-articulos\\Imagenes.cs",
               "ToolTip": "C:\\Users\\ruben\\Documents\\Cursos\\Curso C# Exp Uni\\Repo-tpWinform-equipo-J\\tp-winform-equipo-J\\TPWinForm_equipo-J\\gestor-articulos\\Imagenes.cs",
               "RelativeToolTip": "gestor-articulos\\Imagenes.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-12T03:26:49.191Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Marcas.cs",
               "DocumentMoniker": "C:\\Users\\ruben\\Documents\\Cursos\\Curso C# Exp Uni\\Repo-tpWinform-equipo-J\\tp-winform-equipo-J\\TPWinForm_equipo-J\\gestor-articulos\\Marcas.cs",
               "RelativeDocumentMoniker": "gestor-articulos\\Marcas.cs",
