@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace gestor_articulos
+namespace dominio
 {
-    internal class Imagenes
+    public class Imagenes
     {
         public int Id { get; set; }
         public string UrlImagen { get; set; }

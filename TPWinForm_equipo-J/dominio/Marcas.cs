@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace gestor_articulos
+namespace dominio
 {
-    internal class Marcas
+    public class Marcas
     {
         public int Id { get; set; }
         public string Descripcion { get; set; }
