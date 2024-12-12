@@ -8,5 +8,8 @@ namespace gestor_articulos
 {
     internal class Marcas
     {
+        public int Id { get; set; }
+        public string Descripcion { get; set; }
+
     }
 }
