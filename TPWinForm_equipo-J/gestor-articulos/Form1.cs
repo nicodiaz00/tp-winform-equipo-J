@@ -1,4 +1,6 @@
-﻿using System;
+﻿using negocio;
+using dominio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +17,13 @@ namespace gestor_articulos
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            ArticuloNegocio negocioArticulo = new ArticuloNegocio();
+            dgvArticulos.DataSource = negocioArticulo.listarArticulo();
+
         }
     }
 }
