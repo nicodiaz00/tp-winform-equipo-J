@@ -71,6 +71,8 @@ namespace gestor_articulos
         {
             frmAltaArticulo ventanaAltaArticulo = new frmAltaArticulo();
             ventanaAltaArticulo.ShowDialog();
+
+            
         }
     }
 }

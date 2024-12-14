@@ -159,6 +159,7 @@
             this.btnCancelar.TabIndex = 13;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // frmAltaArticulo
             // 
@@ -181,6 +182,7 @@
             this.Controls.Add(this.lblCodigo);
             this.Name = "frmAltaArticulo";
             this.Text = "Nuevo Articulo";
+            this.Load += new System.EventHandler(this.frmAltaArticulo_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
