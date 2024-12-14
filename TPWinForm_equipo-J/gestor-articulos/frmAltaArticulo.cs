@@ -22,16 +22,49 @@ namespace gestor_articulos
         private void frmAltaArticulo_Load(object sender, EventArgs e)
         {
             MarcaNegocio marcaNegocio = new MarcaNegocio();
-
             CategoriaNegocio categoriaNegocio = new CategoriaNegocio();
+            try
+            {
+                cboCategoria.DataSource = categoriaNegocio.listarCategoria();
+                cboMarca.DataSource = marcaNegocio.listarMarcas();
+            }
+            catch (Exception ex)
+            {
 
-            cboCategoria.DataSource = categoriaNegocio.listarCategoria();
-            cboMarca.DataSource = marcaNegocio.listarMarcas();
+                MessageBox.Show(ex.ToString());
+            }
+   
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void btnAceptar_Click(object sender, EventArgs e)
+        {
+            Articulo articuloNuevo = new Articulo();
+            ArticuloNegocio articuloNegocio = new ArticuloNegocio();
+
+            try
+            {
+                articuloNuevo.CodigoArticulo = txtCodigo.Text;
+                articuloNuevo.Nombre = txtNombre.Text;
+                articuloNuevo.Descripcion = txtDescripcion.Text;
+                articuloNuevo.Marca = (Marcas)cboMarca.SelectedItem;
+                articuloNuevo.Categoria = (Categoria)cboCategoria.SelectedItem;
+                articuloNuevo.Precio = decimal.Parse(txtPrecio.Text);
+                
+                articuloNegocio.agregarArticulo(articuloNuevo);
+                MessageBox.Show("Articulo agregado");
+                
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            
         }
     }
 }

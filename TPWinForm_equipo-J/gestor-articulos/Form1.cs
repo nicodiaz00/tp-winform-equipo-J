@@ -56,8 +56,10 @@ namespace gestor_articulos
         {
             Articulo artSeleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
             dgvImagenes.DataSource = artSeleccionado.Imagenes;
-
-            cargarImagen(pbxArticulo, artSeleccionado.Imagenes[0].UrlImagen);
+            
+                cargarImagen(pbxArticulo, artSeleccionado.Imagenes[0].UrlImagen);
+            
+            
             //pbxArticulo.Load(artSeleccionado.Imagenes[0].UrlImagen);
         }
 
