@@ -14,7 +14,8 @@ namespace negocio
         {
             List<Articulo> listaArticulos = new List<Articulo>();
             AccesoDatos  accesoDatosArticulo = new AccesoDatos();
-
+            List<Imagenes> listaDeImagenes = new List<Imagenes>();
+            ImagenNegocio ImagenNegocio = new ImagenNegocio();
             try
             {
                 accesoDatosArticulo.setearConsulta("Select A.Id, A.Codigo, A.Nombre, A.Descripcion, A.IdMarca, A.IdCategoria, C.descripcion as Categoria, M.descripcion as Marca, A.Precio  from ARTICULOS A, CATEGORIAS C, MARCAS M where A.IdMarca = M.Id and A.IdCategoria = C.Id");
@@ -36,6 +37,8 @@ namespace negocio
                     articulo.Categoria.Id = (int)accesoDatosArticulo.Lector["IdCategoria"];
                     articulo.Categoria.DescripcionCategoria = (string)accesoDatosArticulo.Lector["Categoria"];
 
+                    articulo.Imagenes= ImagenNegocio.listarImagenesId(articulo.Id);
+
                     listaArticulos.Add(articulo);
 
                 }
@@ -51,5 +54,6 @@ namespace negocio
                 accesoDatosArticulo.cerrarConexion();
             }
         }
+        
     }
 }
