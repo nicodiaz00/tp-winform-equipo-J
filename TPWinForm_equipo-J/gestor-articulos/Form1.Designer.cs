@@ -50,7 +50,7 @@
             this.dgvImagenes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvImagenes.Location = new System.Drawing.Point(12, 501);
             this.dgvImagenes.Name = "dgvImagenes";
-            this.dgvImagenes.Size = new System.Drawing.Size(747, 81);
+            this.dgvImagenes.Size = new System.Drawing.Size(747, 69);
             this.dgvImagenes.TabIndex = 1;
             this.dgvImagenes.SelectionChanged += new System.EventHandler(this.dgvImagenes_SelectionChanged);
             // 
@@ -58,7 +58,7 @@
             // 
             this.pbxArticulo.Location = new System.Drawing.Point(785, 201);
             this.pbxArticulo.Name = "pbxArticulo";
-            this.pbxArticulo.Size = new System.Drawing.Size(325, 381);
+            this.pbxArticulo.Size = new System.Drawing.Size(325, 369);
             this.pbxArticulo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxArticulo.TabIndex = 2;
             this.pbxArticulo.TabStop = false;
@@ -68,7 +68,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1463, 841);
+            this.ClientSize = new System.Drawing.Size(1912, 838);
             this.Controls.Add(this.pbxArticulo);
             this.Controls.Add(this.dgvImagenes);
             this.Controls.Add(this.dgvArticulos);

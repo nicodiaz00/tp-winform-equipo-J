@@ -47,12 +47,13 @@ namespace negocio
 
             try
             {
-                accesodatosImagen.setearConsulta($"Select I.Id, I.ImagenUrl from IMAGENES I where I.IdArticulo ={id}");
+                accesodatosImagen.setearConsulta($"Select I.Id, I.IdArticulo, I.ImagenUrl from IMAGENES I where I.IdArticulo ={id}");
                 accesodatosImagen.ejecutarLectura();
                 while (accesodatosImagen.Lector.Read())
                 {
                     Imagenes Imagen = new Imagenes();
                     Imagen.Id = (int)accesodatosImagen.Lector["Id"];
+                    Imagen.IdArticulo = (int)accesodatosImagen.Lector["IdArticulo"];
                     Imagen.UrlImagen = (string)accesodatosImagen.Lector["ImagenUrl"];
 
                     listaImagen.Add(Imagen);
