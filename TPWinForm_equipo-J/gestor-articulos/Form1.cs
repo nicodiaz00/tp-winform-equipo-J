@@ -66,5 +66,11 @@ namespace gestor_articulos
             Imagenes imagenSeleccionada = (Imagenes)dgvImagenes.CurrentRow.DataBoundItem;
             cargarImagen(pbxArticulo, imagenSeleccionada.UrlImagen);
         }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            frmAltaArticulo ventanaAltaArticulo = new frmAltaArticulo();
+            ventanaAltaArticulo.ShowDialog();
+        }
     }
 }
