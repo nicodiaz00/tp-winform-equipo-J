@@ -55,13 +55,17 @@ namespace negocio
             }
         }
 
-        public void agregarArticulo(Articulo nuevoArticulo)
+        public int agregarArticulo(Articulo nuevoArticulo)
         {
             AccesoDatos accesoDatos = new AccesoDatos();
             try
             {
                 accesoDatos.setearConsulta("Insert into ARTICULOS(Codigo, Nombre, Descripcion, IdMarca, IdCategoria, Precio) VALUES('" + nuevoArticulo.CodigoArticulo + "' , '"+ nuevoArticulo.Nombre +"', '"+ nuevoArticulo.Descripcion +"', " + nuevoArticulo.Marca.Id +","+ nuevoArticulo.Categoria.Id +", "+nuevoArticulo.Precio+")");
                 accesoDatos.ejecutarAccion();
+
+                int idArticulo= accesoDatos.obtenerId();
+
+                return idArticulo;
             }
             catch (Exception)
             {

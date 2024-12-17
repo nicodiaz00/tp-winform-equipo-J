@@ -70,5 +70,27 @@ namespace negocio
                 accesodatosImagen.cerrarConexion();
             }
         }
+        public void crearImagen(Imagenes imagenNueva)
+        {
+            AccesoDatos accesoDatosImagen = new AccesoDatos();
+
+            try
+            {
+                accesoDatosImagen.setearConsulta("insert into IMAGENES(IdArticulo, ImagenUrl) values(" + imagenNueva.IdArticulo + ", '" + imagenNueva.UrlImagen + "');");
+                accesoDatosImagen.ejecutarAccion();
+
+
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                accesoDatosImagen.cerrarConexion();
+            }
+        }
     }
 }

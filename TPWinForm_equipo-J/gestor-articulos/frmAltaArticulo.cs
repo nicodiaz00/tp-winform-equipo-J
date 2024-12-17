@@ -44,7 +44,10 @@ namespace gestor_articulos
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             Articulo articuloNuevo = new Articulo();
+            Imagenes imagenNueva = new Imagenes();
             ArticuloNegocio articuloNegocio = new ArticuloNegocio();
+            ImagenNegocio imagenNegocio = new ImagenNegocio();
+            AccesoDatos accesoDatos = new AccesoDatos();
 
             try
             {
@@ -55,9 +58,20 @@ namespace gestor_articulos
                 articuloNuevo.Categoria = (Categoria)cboCategoria.SelectedItem;
                 articuloNuevo.Precio = decimal.Parse(txtPrecio.Text);
                 
-                articuloNegocio.agregarArticulo(articuloNuevo);
-                MessageBox.Show("Articulo agregado");
+                int idCreado= articuloNegocio.agregarArticulo(articuloNuevo);
+
+                imagenNueva.IdArticulo = idCreado;
+                imagenNueva.UrlImagen = txtUrlImagen.Text;
+
+                imagenNegocio.crearImagen(imagenNueva);
+
                 
+
+
+                MessageBox.Show("Articulo agregado");
+                MessageBox.Show("EL id es:" + idCreado);
+
+
             }
             catch (Exception ex)
             {
@@ -65,6 +79,11 @@ namespace gestor_articulos
                 throw ex;
             }
             
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

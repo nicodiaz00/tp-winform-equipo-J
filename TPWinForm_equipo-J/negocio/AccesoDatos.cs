@@ -63,5 +63,21 @@ namespace negocio
                 throw ex;
             }
         }
+        public int obtenerId()
+        {
+            try
+            {
+                string consulta = "SELECT CAST(SCOPE_IDENTITY() AS INT)";
+                comando.CommandType = System.Data.CommandType.Text;
+                comando.CommandText = consulta;
+
+                // Retorna el último ID generado
+                return Convert.ToInt32(comando.ExecuteScalar());
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error: "+ ex.ToString());
+            }
+        }
     }
 }
