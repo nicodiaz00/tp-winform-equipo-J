@@ -71,13 +71,17 @@ namespace negocio
                 comando.CommandType = System.Data.CommandType.Text;
                 comando.CommandText = consulta;
 
-                // Retorna el último ID generado
+                
                 return Convert.ToInt32(comando.ExecuteScalar());
             }
             catch (Exception ex)
             {
                 throw new Exception("Error: "+ ex.ToString());
             }
+        }
+        public void setearParametro(string parametro, object valor)
+        {
+            comando.Parameters.AddWithValue(parametro, valor);
         }
     }
 }

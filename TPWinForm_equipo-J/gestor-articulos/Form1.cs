@@ -20,6 +20,7 @@ namespace gestor_articulos
         {
             try
             {
+                
                 pictureBox.Load(urlImagen);
             }
             catch (Exception ex)
@@ -28,20 +29,34 @@ namespace gestor_articulos
                 pictureBox.Load(urlPlaceHolder);
             }
         }
+        
         public Form1()
         {
             InitializeComponent();
         }
-
-        private void Form1_Load(object sender, EventArgs e)
+        private void cargarArticulos()
         {
             ArticuloNegocio negocioArticulo = new ArticuloNegocio();
             ImagenNegocio imagenNegocio = new ImagenNegocio();
-            listaArticulos = negocioArticulo.listarArticulo();
-            dgvArticulos.DataSource = listaArticulos;
-            dgvImagenes.DataSource = listaArticulos[0].Imagenes;
+            try
+            {
+                listaArticulos = negocioArticulo.listarArticulo();
+                dgvArticulos.DataSource = listaArticulos;
+                dgvImagenes.DataSource = listaArticulos[0].Imagenes;
 
-            cargarImagen(pbxArticulo, listaArticulos[0].Imagenes[0].UrlImagen);
+                cargarImagen(pbxArticulo, listaArticulos[0].Imagenes[0].UrlImagen);
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+            cargarArticulos();
 
             //pbxArticulo.Load(listaArticulos[0].Imagenes[0].UrlImagen);
 
@@ -56,8 +71,16 @@ namespace gestor_articulos
         {
             Articulo artSeleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
             dgvImagenes.DataSource = artSeleccionado.Imagenes;
-            
+
+                if(artSeleccionado.Imagenes.Count != 0)
+            {
                 cargarImagen(pbxArticulo, artSeleccionado.Imagenes[0].UrlImagen);
+            }
+            else
+            {
+                cargarImagen(pbxArticulo, urlPlaceHolder);
+            }      
+                
             
             
             //pbxArticulo.Load(artSeleccionado.Imagenes[0].UrlImagen);
@@ -73,7 +96,7 @@ namespace gestor_articulos
         {
             frmAltaArticulo ventanaAltaArticulo = new frmAltaArticulo();
             ventanaAltaArticulo.ShowDialog();
-
+            cargarArticulos();
             
         }
     }

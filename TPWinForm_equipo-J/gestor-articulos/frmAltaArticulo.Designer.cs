@@ -44,6 +44,8 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtUrlImagen = new System.Windows.Forms.TextBox();
+            this.pbxNuevoArticulo = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxNuevoArticulo)).BeginInit();
             this.SuspendLayout();
             // 
             // lblCodigo
@@ -183,11 +185,20 @@
             this.txtUrlImagen.Size = new System.Drawing.Size(136, 20);
             this.txtUrlImagen.TabIndex = 15;
             // 
+            // pbxNuevoArticulo
+            // 
+            this.pbxNuevoArticulo.Location = new System.Drawing.Point(474, 92);
+            this.pbxNuevoArticulo.Name = "pbxNuevoArticulo";
+            this.pbxNuevoArticulo.Size = new System.Drawing.Size(321, 257);
+            this.pbxNuevoArticulo.TabIndex = 16;
+            this.pbxNuevoArticulo.TabStop = false;
+            // 
             // frmAltaArticulo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(921, 688);
+            this.Controls.Add(this.pbxNuevoArticulo);
             this.Controls.Add(this.txtUrlImagen);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCancelar);
@@ -207,6 +218,7 @@
             this.Name = "frmAltaArticulo";
             this.Text = "Nuevo Articulo";
             this.Load += new System.EventHandler(this.frmAltaArticulo_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pbxNuevoArticulo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -230,5 +242,6 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtUrlImagen;
+        private System.Windows.Forms.PictureBox pbxNuevoArticulo;
     }
 }

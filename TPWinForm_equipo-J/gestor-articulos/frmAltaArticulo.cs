@@ -67,9 +67,8 @@ namespace gestor_articulos
 
                 
 
-
                 MessageBox.Show("Articulo agregado");
-                MessageBox.Show("EL id es:" + idCreado);
+                
 
 
             }
