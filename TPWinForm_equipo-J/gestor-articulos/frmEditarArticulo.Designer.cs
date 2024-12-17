@@ -46,6 +46,9 @@
             this.btnAgregarImagen = new System.Windows.Forms.Button();
             this.btnRemplazarImagen = new System.Windows.Forms.Button();
             this.btnBorrarImagen = new System.Windows.Forms.Button();
+            this.txtUrlImagen = new System.Windows.Forms.TextBox();
+            this.btnAceptarEdicion = new System.Windows.Forms.Button();
+            this.btnCancelarEdicion = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvImagenes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxEditarArticulo)).BeginInit();
             this.SuspendLayout();
@@ -107,9 +110,9 @@
             // dgvImagenes
             // 
             this.dgvImagenes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvImagenes.Location = new System.Drawing.Point(55, 307);
+            this.dgvImagenes.Location = new System.Drawing.Point(58, 350);
             this.dgvImagenes.Name = "dgvImagenes";
-            this.dgvImagenes.Size = new System.Drawing.Size(343, 80);
+            this.dgvImagenes.Size = new System.Drawing.Size(343, 105);
             this.dgvImagenes.TabIndex = 6;
             // 
             // txtCodigo
@@ -169,14 +172,14 @@
             // 
             this.pbxEditarArticulo.Location = new System.Drawing.Point(452, 40);
             this.pbxEditarArticulo.Name = "pbxEditarArticulo";
-            this.pbxEditarArticulo.Size = new System.Drawing.Size(331, 347);
+            this.pbxEditarArticulo.Size = new System.Drawing.Size(331, 415);
             this.pbxEditarArticulo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxEditarArticulo.TabIndex = 14;
             this.pbxEditarArticulo.TabStop = false;
             // 
             // btnAgregarImagen
             // 
-            this.btnAgregarImagen.Location = new System.Drawing.Point(55, 393);
+            this.btnAgregarImagen.Location = new System.Drawing.Point(136, 306);
             this.btnAgregarImagen.Name = "btnAgregarImagen";
             this.btnAgregarImagen.Size = new System.Drawing.Size(75, 23);
             this.btnAgregarImagen.TabIndex = 15;
@@ -186,7 +189,7 @@
             // 
             // btnRemplazarImagen
             // 
-            this.btnRemplazarImagen.Location = new System.Drawing.Point(152, 393);
+            this.btnRemplazarImagen.Location = new System.Drawing.Point(323, 306);
             this.btnRemplazarImagen.Name = "btnRemplazarImagen";
             this.btnRemplazarImagen.Size = new System.Drawing.Size(75, 23);
             this.btnRemplazarImagen.TabIndex = 16;
@@ -196,18 +199,47 @@
             // 
             // btnBorrarImagen
             // 
-            this.btnBorrarImagen.Location = new System.Drawing.Point(249, 393);
+            this.btnBorrarImagen.Location = new System.Drawing.Point(228, 306);
             this.btnBorrarImagen.Name = "btnBorrarImagen";
             this.btnBorrarImagen.Size = new System.Drawing.Size(75, 23);
             this.btnBorrarImagen.TabIndex = 17;
             this.btnBorrarImagen.Text = "Borrar";
             this.btnBorrarImagen.UseVisualStyleBackColor = true;
             // 
+            // txtUrlImagen
+            // 
+            this.txtUrlImagen.Location = new System.Drawing.Point(136, 271);
+            this.txtUrlImagen.Name = "txtUrlImagen";
+            this.txtUrlImagen.Size = new System.Drawing.Size(262, 20);
+            this.txtUrlImagen.TabIndex = 18;
+            // 
+            // btnAceptarEdicion
+            // 
+            this.btnAceptarEdicion.Location = new System.Drawing.Point(228, 510);
+            this.btnAceptarEdicion.Name = "btnAceptarEdicion";
+            this.btnAceptarEdicion.Size = new System.Drawing.Size(108, 44);
+            this.btnAceptarEdicion.TabIndex = 19;
+            this.btnAceptarEdicion.Text = "Aceptar";
+            this.btnAceptarEdicion.UseVisualStyleBackColor = true;
+            this.btnAceptarEdicion.Click += new System.EventHandler(this.btnAceptarEdicion_Click);
+            // 
+            // btnCancelarEdicion
+            // 
+            this.btnCancelarEdicion.Location = new System.Drawing.Point(394, 510);
+            this.btnCancelarEdicion.Name = "btnCancelarEdicion";
+            this.btnCancelarEdicion.Size = new System.Drawing.Size(108, 44);
+            this.btnCancelarEdicion.TabIndex = 20;
+            this.btnCancelarEdicion.Text = "Cancelar";
+            this.btnCancelarEdicion.UseVisualStyleBackColor = true;
+            // 
             // frmEditarArticulo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(976, 450);
+            this.ClientSize = new System.Drawing.Size(976, 566);
+            this.Controls.Add(this.btnCancelarEdicion);
+            this.Controls.Add(this.btnAceptarEdicion);
+            this.Controls.Add(this.txtUrlImagen);
             this.Controls.Add(this.btnBorrarImagen);
             this.Controls.Add(this.btnRemplazarImagen);
             this.Controls.Add(this.btnAgregarImagen);
@@ -256,5 +288,8 @@
         private System.Windows.Forms.Button btnAgregarImagen;
         private System.Windows.Forms.Button btnRemplazarImagen;
         private System.Windows.Forms.Button btnBorrarImagen;
+        private System.Windows.Forms.TextBox txtUrlImagen;
+        private System.Windows.Forms.Button btnAceptarEdicion;
+        private System.Windows.Forms.Button btnCancelarEdicion;
     }
 }

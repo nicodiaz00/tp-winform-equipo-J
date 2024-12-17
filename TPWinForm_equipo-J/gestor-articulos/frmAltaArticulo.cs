@@ -65,11 +65,15 @@ namespace gestor_articulos
                 int idCreado= articuloNegocio.agregarArticulo(articuloNuevo);
 
                 imagenNueva.IdArticulo = idCreado;
-                imagenNueva.UrlImagen = txtUrlImagen.Text;
+                if (!(txtUrlImagen.Text == ""))
+                {
+                    imagenNueva.UrlImagen = txtUrlImagen.Text;
 
-                imagenNegocio.crearImagen(imagenNueva);
+                    imagenNegocio.crearImagen(imagenNueva);
 
-                
+                }
+
+
 
                 MessageBox.Show("Articulo agregado");
                 Close();
@@ -91,7 +95,11 @@ namespace gestor_articulos
 
         private void txtUrlImagen_Leave(object sender, EventArgs e)
         {
-            pbxNuevoArticulo.Load(txtUrlImagen.Text);
+            if(!(txtUrlImagen.Text == ""))
+            {
+                pbxNuevoArticulo.Load(txtUrlImagen.Text);
+            }
+            
         }
     }
 }
