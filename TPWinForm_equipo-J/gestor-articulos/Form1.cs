@@ -99,5 +99,14 @@ namespace gestor_articulos
             cargarArticulos();
             
         }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            Articulo artSeleccionado;
+            artSeleccionado = (Articulo) dgvArticulos.CurrentRow.DataBoundItem;
+            frmEditarArticulo  ventanaEditar = new frmEditarArticulo(artSeleccionado);
+            ventanaEditar.ShowDialog();
+            cargarArticulos();
+        }
     }
 }

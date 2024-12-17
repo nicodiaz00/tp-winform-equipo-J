@@ -14,3 +14,4 @@ C:\Users\nico\Documents\c#\experiencia-universidad\tp-winform-equipo-J\TPWinForm
 C:\Users\nico\Documents\c#\experiencia-universidad\tp-winform-equipo-J\TPWinForm_equipo-J\gestor-articulos\obj\Debug\gestor-articulos.exe
 C:\Users\nico\Documents\c#\experiencia-universidad\tp-winform-equipo-J\TPWinForm_equipo-J\gestor-articulos\obj\Debug\gestor-articulos.pdb
 C:\Users\nico\Documents\c#\experiencia-universidad\tp-winform-equipo-J\TPWinForm_equipo-J\gestor-articulos\obj\Debug\gestor_articulos.frmAltaArticulo.resources
+C:\Users\nico\Documents\c#\experiencia-universidad\tp-winform-equipo-J\TPWinForm_equipo-J\gestor-articulos\obj\Debug\gestor_articulos.frmEditarArticulo.resources
