@@ -182,6 +182,7 @@
             this.btnAgregarImagen.TabIndex = 15;
             this.btnAgregarImagen.Text = "Agregar";
             this.btnAgregarImagen.UseVisualStyleBackColor = true;
+            this.btnAgregarImagen.Click += new System.EventHandler(this.btnAgregarImagen_Click);
             // 
             // btnRemplazarImagen
             // 

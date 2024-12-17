@@ -26,7 +26,11 @@ namespace gestor_articulos
             try
             {
                 cboCategoria.DataSource = categoriaNegocio.listarCategoria();
+                cboCategoria.ValueMember = "Id";
+                cboCategoria.DisplayMember = "descripcionCategoria";
                 cboMarca.DataSource = marcaNegocio.listarMarcas();
+                cboMarca.ValueMember = "Id";
+                cboMarca.DisplayMember = "Descripcion";
             }
             catch (Exception ex)
             {
