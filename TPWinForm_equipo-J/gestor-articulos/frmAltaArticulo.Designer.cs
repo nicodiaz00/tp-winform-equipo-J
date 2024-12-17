@@ -184,6 +184,7 @@
             this.txtUrlImagen.Name = "txtUrlImagen";
             this.txtUrlImagen.Size = new System.Drawing.Size(136, 20);
             this.txtUrlImagen.TabIndex = 15;
+            this.txtUrlImagen.Leave += new System.EventHandler(this.txtUrlImagen_Leave);
             // 
             // pbxNuevoArticulo
             // 
