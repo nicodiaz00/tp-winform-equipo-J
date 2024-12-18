@@ -15,3 +15,20 @@ C:\Users\nico\Documents\c#\experiencia-universidad\tp-winform-equipo-J\TPWinForm
 C:\Users\nico\Documents\c#\experiencia-universidad\tp-winform-equipo-J\TPWinForm_equipo-J\gestor-articulos\obj\Debug\gestor-articulos.pdb
 C:\Users\nico\Documents\c#\experiencia-universidad\tp-winform-equipo-J\TPWinForm_equipo-J\gestor-articulos\obj\Debug\gestor_articulos.frmAltaArticulo.resources
 C:\Users\nico\Documents\c#\experiencia-universidad\tp-winform-equipo-J\TPWinForm_equipo-J\gestor-articulos\obj\Debug\gestor_articulos.frmEditarArticulo.resources
+C:\Users\ruben\Documents\Cursos\Curso C# Exp Uni\Repo-tpWinform-equipo-J\tp-winform-equipo-J\TPWinForm_equipo-J\gestor-articulos\bin\Debug\gestor-articulos.exe.config
+C:\Users\ruben\Documents\Cursos\Curso C# Exp Uni\Repo-tpWinform-equipo-J\tp-winform-equipo-J\TPWinForm_equipo-J\gestor-articulos\bin\Debug\gestor-articulos.exe
+C:\Users\ruben\Documents\Cursos\Curso C# Exp Uni\Repo-tpWinform-equipo-J\tp-winform-equipo-J\TPWinForm_equipo-J\gestor-articulos\bin\Debug\gestor-articulos.pdb
+C:\Users\ruben\Documents\Cursos\Curso C# Exp Uni\Repo-tpWinform-equipo-J\tp-winform-equipo-J\TPWinForm_equipo-J\gestor-articulos\bin\Debug\dominio.dll
+C:\Users\ruben\Documents\Cursos\Curso C# Exp Uni\Repo-tpWinform-equipo-J\tp-winform-equipo-J\TPWinForm_equipo-J\gestor-articulos\bin\Debug\negocio.dll
+C:\Users\ruben\Documents\Cursos\Curso C# Exp Uni\Repo-tpWinform-equipo-J\tp-winform-equipo-J\TPWinForm_equipo-J\gestor-articulos\bin\Debug\dominio.pdb
+C:\Users\ruben\Documents\Cursos\Curso C# Exp Uni\Repo-tpWinform-equipo-J\tp-winform-equipo-J\TPWinForm_equipo-J\gestor-articulos\bin\Debug\negocio.pdb
+C:\Users\ruben\Documents\Cursos\Curso C# Exp Uni\Repo-tpWinform-equipo-J\tp-winform-equipo-J\TPWinForm_equipo-J\gestor-articulos\obj\Debug\gestor-articulos.csproj.AssemblyReference.cache
+C:\Users\ruben\Documents\Cursos\Curso C# Exp Uni\Repo-tpWinform-equipo-J\tp-winform-equipo-J\TPWinForm_equipo-J\gestor-articulos\obj\Debug\gestor_articulos.Form1.resources
+C:\Users\ruben\Documents\Cursos\Curso C# Exp Uni\Repo-tpWinform-equipo-J\tp-winform-equipo-J\TPWinForm_equipo-J\gestor-articulos\obj\Debug\gestor_articulos.frmAltaArticulo.resources
+C:\Users\ruben\Documents\Cursos\Curso C# Exp Uni\Repo-tpWinform-equipo-J\tp-winform-equipo-J\TPWinForm_equipo-J\gestor-articulos\obj\Debug\gestor_articulos.frmEditarArticulo.resources
+C:\Users\ruben\Documents\Cursos\Curso C# Exp Uni\Repo-tpWinform-equipo-J\tp-winform-equipo-J\TPWinForm_equipo-J\gestor-articulos\obj\Debug\gestor_articulos.Properties.Resources.resources
+C:\Users\ruben\Documents\Cursos\Curso C# Exp Uni\Repo-tpWinform-equipo-J\tp-winform-equipo-J\TPWinForm_equipo-J\gestor-articulos\obj\Debug\gestor-articulos.csproj.GenerateResource.cache
+C:\Users\ruben\Documents\Cursos\Curso C# Exp Uni\Repo-tpWinform-equipo-J\tp-winform-equipo-J\TPWinForm_equipo-J\gestor-articulos\obj\Debug\gestor-articulos.csproj.CoreCompileInputs.cache
+C:\Users\ruben\Documents\Cursos\Curso C# Exp Uni\Repo-tpWinform-equipo-J\tp-winform-equipo-J\TPWinForm_equipo-J\gestor-articulos\obj\Debug\gestor-a.5F914CF4.Up2Date
+C:\Users\ruben\Documents\Cursos\Curso C# Exp Uni\Repo-tpWinform-equipo-J\tp-winform-equipo-J\TPWinForm_equipo-J\gestor-articulos\obj\Debug\gestor-articulos.exe
+C:\Users\ruben\Documents\Cursos\Curso C# Exp Uni\Repo-tpWinform-equipo-J\tp-winform-equipo-J\TPWinForm_equipo-J\gestor-articulos\obj\Debug\gestor-articulos.pdb
