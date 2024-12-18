@@ -106,7 +106,7 @@
             // lblImagenes
             // 
             this.lblImagenes.AutoSize = true;
-            this.lblImagenes.Location = new System.Drawing.Point(69, 334);
+            this.lblImagenes.Location = new System.Drawing.Point(69, 341);
             this.lblImagenes.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblImagenes.Name = "lblImagenes";
             this.lblImagenes.Size = new System.Drawing.Size(67, 16);
@@ -116,7 +116,7 @@
             // dgvImagenes
             // 
             this.dgvImagenes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvImagenes.Location = new System.Drawing.Point(77, 431);
+            this.dgvImagenes.Location = new System.Drawing.Point(72, 431);
             this.dgvImagenes.Margin = new System.Windows.Forms.Padding(4);
             this.dgvImagenes.Name = "dgvImagenes";
             this.dgvImagenes.RowHeadersWidth = 51;
@@ -185,6 +185,7 @@
             // 
             // pbxEditarArticulo
             // 
+            this.pbxEditarArticulo.BackColor = System.Drawing.SystemColors.Control;
             this.pbxEditarArticulo.Location = new System.Drawing.Point(603, 49);
             this.pbxEditarArticulo.Margin = new System.Windows.Forms.Padding(4);
             this.pbxEditarArticulo.Name = "pbxEditarArticulo";
@@ -195,7 +196,7 @@
             // 
             // btnAgregarImagen
             // 
-            this.btnAgregarImagen.Location = new System.Drawing.Point(181, 377);
+            this.btnAgregarImagen.Location = new System.Drawing.Point(179, 381);
             this.btnAgregarImagen.Margin = new System.Windows.Forms.Padding(4);
             this.btnAgregarImagen.Name = "btnAgregarImagen";
             this.btnAgregarImagen.Size = new System.Drawing.Size(100, 28);
@@ -206,18 +207,18 @@
             // 
             // btnRemplazarImagen
             // 
-            this.btnRemplazarImagen.Location = new System.Drawing.Point(431, 377);
+            this.btnRemplazarImagen.Location = new System.Drawing.Point(429, 381);
             this.btnRemplazarImagen.Margin = new System.Windows.Forms.Padding(4);
             this.btnRemplazarImagen.Name = "btnRemplazarImagen";
             this.btnRemplazarImagen.Size = new System.Drawing.Size(100, 28);
             this.btnRemplazarImagen.TabIndex = 16;
-            this.btnRemplazarImagen.Text = "Remplazar";
+            this.btnRemplazarImagen.Text = "Reemplazar";
             this.btnRemplazarImagen.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnRemplazarImagen.UseVisualStyleBackColor = true;
             // 
             // btnBorrarImagen
             // 
-            this.btnBorrarImagen.Location = new System.Drawing.Point(304, 377);
+            this.btnBorrarImagen.Location = new System.Drawing.Point(302, 381);
             this.btnBorrarImagen.Margin = new System.Windows.Forms.Padding(4);
             this.btnBorrarImagen.Name = "btnBorrarImagen";
             this.btnBorrarImagen.Size = new System.Drawing.Size(100, 28);
@@ -227,7 +228,7 @@
             // 
             // txtUrlImagen
             // 
-            this.txtUrlImagen.Location = new System.Drawing.Point(181, 334);
+            this.txtUrlImagen.Location = new System.Drawing.Point(181, 341);
             this.txtUrlImagen.Margin = new System.Windows.Forms.Padding(4);
             this.txtUrlImagen.Name = "txtUrlImagen";
             this.txtUrlImagen.Size = new System.Drawing.Size(348, 22);
