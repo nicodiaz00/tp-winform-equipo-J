@@ -88,8 +88,12 @@ namespace gestor_articulos
 
         private void dgvImagenes_SelectionChanged(object sender, EventArgs e)
         {
-            Imagenes imagenSeleccionada = (Imagenes)dgvImagenes.CurrentRow.DataBoundItem;
-            cargarImagen(pbxArticulo, imagenSeleccionada.UrlImagen);
+            if(dgvImagenes.CurrentRow != null)
+            {
+                Imagenes imagenSeleccionada = (Imagenes)dgvImagenes.CurrentRow.DataBoundItem;
+                cargarImagen(pbxArticulo, imagenSeleccionada.UrlImagen);
+            }
+            
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
@@ -114,22 +118,49 @@ namespace gestor_articulos
             List<Articulo>listaFiltrada = new List<Articulo>();
             string nombreArticulo = txtBusqueda.Text;
 
-            foreach (var item in listaArticulos)
+            if(nombreArticulo != "")
             {
-                
-                if(item.Nombre.ToLower().Contains(nombreArticulo.ToLower()))
+                foreach (var item in listaArticulos)
                 {
-                    
-                    listaFiltrada.Add(item);
-                    
+
+                    if (item.Nombre.ToLower().Contains(nombreArticulo.ToLower()))
+                    {
+
+                        listaFiltrada.Add(item);
+
+                    }
+
                 }
-                
+
+                if(listaFiltrada.Count > 0)
+                {
+                    dgvArticulos.DataSource = null;
+                    
+                    dgvArticulos.DataSource = listaFiltrada;
+
+                    if (listaFiltrada[0].Imagenes.Count > 0)
+                    {
+                        dgvImagenes.DataSource = null;
+                        dgvImagenes.DataSource = listaFiltrada[0].Imagenes;
+                        cargarImagen(pbxArticulo, listaFiltrada[0].Imagenes[0].UrlImagen);
+                    }
+                    else
+                    {
+                        cargarImagen(pbxArticulo, urlPlaceHolder);
+                    }
+                }
             }
-            dgvArticulos.DataSource = null;
-            dgvImagenes.DataSource = null;
-            dgvArticulos.DataSource = listaFiltrada;
-            dgvImagenes.DataSource = listaFiltrada[0].Imagenes;
-            cargarImagen(pbxArticulo, listaFiltrada[0].Imagenes[0].UrlImagen);
+            else
+            {
+                listaFiltrada = listaArticulos;
+                dgvArticulos.DataSource = null;
+
+                dgvArticulos.DataSource = listaFiltrada;
+                dgvImagenes.DataSource = listaFiltrada[0].Imagenes;
+                cargarImagen(pbxArticulo, listaFiltrada[0].Imagenes[0].UrlImagen);
+            }
+
+            
 
 
         }
