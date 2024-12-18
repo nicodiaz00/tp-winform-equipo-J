@@ -108,5 +108,30 @@ namespace gestor_articulos
             ventanaEditar.ShowDialog();
             cargarArticulos();
         }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            List<Articulo>listaFiltrada = new List<Articulo>();
+            string nombreArticulo = txtBusqueda.Text;
+
+            foreach (var item in listaArticulos)
+            {
+                
+                if(item.Nombre.ToLower().Contains(nombreArticulo.ToLower()))
+                {
+                    
+                    listaFiltrada.Add(item);
+                    
+                }
+                
+            }
+            dgvArticulos.DataSource = null;
+            dgvImagenes.DataSource = null;
+            dgvArticulos.DataSource = listaFiltrada;
+            dgvImagenes.DataSource = listaFiltrada[0].Imagenes;
+            cargarImagen(pbxArticulo, listaFiltrada[0].Imagenes[0].UrlImagen);
+
+
+        }
     }
 }
