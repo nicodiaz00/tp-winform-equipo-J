@@ -7,12 +7,40 @@
       "RelativeMoniker": "D:0:0:{0760F4D3-1D01-41EF-AFC8-799F7375C31B}|gestor-articulos\\gestor-articulos.csproj|solutionrelative:gestor-articulos\\frmaltaarticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0760F4D3-1D01-41EF-AFC8-799F7375C31B}|gestor-articulos\\gestor-articulos.csproj|c:\\users\\ruben\\documents\\cursos\\curso c# exp uni\\repo-tpwinform-equipo-j\\tp-winform-equipo-j\\tpwinform_equipo-j\\gestor-articulos\\frmeditararticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{0760F4D3-1D01-41EF-AFC8-799F7375C31B}|gestor-articulos\\gestor-articulos.csproj|solutionrelative:gestor-articulos\\frmeditararticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0760F4D3-1D01-41EF-AFC8-799F7375C31B}|gestor-articulos\\gestor-articulos.csproj|C:\\Users\\ruben\\Documents\\Cursos\\Curso C# Exp Uni\\Repo-tpWinform-equipo-J\\tp-winform-equipo-J\\TPWinForm_equipo-J\\gestor-articulos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{0760F4D3-1D01-41EF-AFC8-799F7375C31B}|gestor-articulos\\gestor-articulos.csproj|solutionrelative:gestor-articulos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0760F4D3-1D01-41EF-AFC8-799F7375C31B}|gestor-articulos\\gestor-articulos.csproj|c:\\users\\ruben\\documents\\cursos\\curso c# exp uni\\repo-tpwinform-equipo-j\\tp-winform-equipo-j\\tpwinform_equipo-j\\gestor-articulos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0760F4D3-1D01-41EF-AFC8-799F7375C31B}|gestor-articulos\\gestor-articulos.csproj|solutionrelative:gestor-articulos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0760F4D3-1D01-41EF-AFC8-799F7375C31B}|gestor-articulos\\gestor-articulos.csproj|c:\\users\\ruben\\documents\\cursos\\curso c# exp uni\\repo-tpwinform-equipo-j\\tp-winform-equipo-j\\tpwinform_equipo-j\\gestor-articulos\\frmaltaarticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0760F4D3-1D01-41EF-AFC8-799F7375C31B}|gestor-articulos\\gestor-articulos.csproj|solutionrelative:gestor-articulos\\frmaltaarticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95E763F6-4A6D-4E0E-B876-0C16AF645C0B}|negocio\\negocio.csproj|C:\\Users\\ruben\\Documents\\Cursos\\Curso C# Exp Uni\\Repo-tpWinform-equipo-J\\tp-winform-equipo-J\\TPWinForm_equipo-J\\negocio\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95E763F6-4A6D-4E0E-B876-0C16AF645C0B}|negocio\\negocio.csproj|solutionrelative:negocio\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95E763F6-4A6D-4E0E-B876-0C16AF645C0B}|negocio\\negocio.csproj|C:\\Users\\ruben\\Documents\\Cursos\\Curso C# Exp Uni\\Repo-tpWinform-equipo-J\\tp-winform-equipo-J\\TPWinForm_equipo-J\\negocio\\marcanegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95E763F6-4A6D-4E0E-B876-0C16AF645C0B}|negocio\\negocio.csproj|solutionrelative:negocio\\marcanegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95E763F6-4A6D-4E0E-B876-0C16AF645C0B}|negocio\\negocio.csproj|C:\\Users\\ruben\\Documents\\Cursos\\Curso C# Exp Uni\\Repo-tpWinform-equipo-J\\tp-winform-equipo-J\\TPWinForm_equipo-J\\negocio\\categorianegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95E763F6-4A6D-4E0E-B876-0C16AF645C0B}|negocio\\negocio.csproj|solutionrelative:negocio\\categorianegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95E763F6-4A6D-4E0E-B876-0C16AF645C0B}|negocio\\negocio.csproj|C:\\Users\\ruben\\Documents\\Cursos\\Curso C# Exp Uni\\Repo-tpWinform-equipo-J\\tp-winform-equipo-J\\TPWinForm_equipo-J\\negocio\\imagennegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95E763F6-4A6D-4E0E-B876-0C16AF645C0B}|negocio\\negocio.csproj|solutionrelative:negocio\\imagennegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95E763F6-4A6D-4E0E-B876-0C16AF645C0B}|negocio\\negocio.csproj|C:\\Users\\ruben\\Documents\\Cursos\\Curso C# Exp Uni\\Repo-tpWinform-equipo-J\\tp-winform-equipo-J\\TPWinForm_equipo-J\\negocio\\articulonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95E763F6-4A6D-4E0E-B876-0C16AF645C0B}|negocio\\negocio.csproj|solutionrelative:negocio\\articulonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0760F4D3-1D01-41EF-AFC8-799F7375C31B}|gestor-articulos\\gestor-articulos.csproj|C:\\Users\\ruben\\Documents\\Cursos\\Curso C# Exp Uni\\Repo-tpWinform-equipo-J\\tp-winform-equipo-J\\TPWinForm_equipo-J\\gestor-articulos\\frmeditararticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0760F4D3-1D01-41EF-AFC8-799F7375C31B}|gestor-articulos\\gestor-articulos.csproj|solutionrelative:gestor-articulos\\frmeditararticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,7 +58,69 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmAltaArticulo.cs",
+              "DocumentMoniker": "C:\\Users\\ruben\\Documents\\Cursos\\Curso C# Exp Uni\\Repo-tpWinform-equipo-J\\tp-winform-equipo-J\\TPWinForm_equipo-J\\gestor-articulos\\frmAltaArticulo.cs",
+              "RelativeDocumentMoniker": "gestor-articulos\\frmAltaArticulo.cs",
+              "ToolTip": "C:\\Users\\ruben\\Documents\\Cursos\\Curso C# Exp Uni\\Repo-tpWinform-equipo-J\\tp-winform-equipo-J\\TPWinForm_equipo-J\\gestor-articulos\\frmAltaArticulo.cs*",
+              "RelativeToolTip": "gestor-articulos\\frmAltaArticulo.cs*",
+              "ViewState": "AgIAAFQAAAAAAAAAAADwv2MAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T13:59:05.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CategoriaNegocio.cs",
+              "DocumentMoniker": "C:\\Users\\ruben\\Documents\\Cursos\\Curso C# Exp Uni\\Repo-tpWinform-equipo-J\\tp-winform-equipo-J\\TPWinForm_equipo-J\\negocio\\CategoriaNegocio.cs",
+              "RelativeDocumentMoniker": "negocio\\CategoriaNegocio.cs",
+              "ToolTip": "C:\\Users\\ruben\\Documents\\Cursos\\Curso C# Exp Uni\\Repo-tpWinform-equipo-J\\tp-winform-equipo-J\\TPWinForm_equipo-J\\negocio\\CategoriaNegocio.cs",
+              "RelativeToolTip": "negocio\\CategoriaNegocio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T05:51:04.253Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AccesoDatos.cs",
+              "DocumentMoniker": "C:\\Users\\ruben\\Documents\\Cursos\\Curso C# Exp Uni\\Repo-tpWinform-equipo-J\\tp-winform-equipo-J\\TPWinForm_equipo-J\\negocio\\AccesoDatos.cs",
+              "RelativeDocumentMoniker": "negocio\\AccesoDatos.cs",
+              "ToolTip": "C:\\Users\\ruben\\Documents\\Cursos\\Curso C# Exp Uni\\Repo-tpWinform-equipo-J\\tp-winform-equipo-J\\TPWinForm_equipo-J\\negocio\\AccesoDatos.cs",
+              "RelativeToolTip": "negocio\\AccesoDatos.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAA9wDMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T05:48:05.296Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ArticuloNegocio.cs",
+              "DocumentMoniker": "C:\\Users\\ruben\\Documents\\Cursos\\Curso C# Exp Uni\\Repo-tpWinform-equipo-J\\tp-winform-equipo-J\\TPWinForm_equipo-J\\negocio\\ArticuloNegocio.cs",
+              "RelativeDocumentMoniker": "negocio\\ArticuloNegocio.cs",
+              "ToolTip": "C:\\Users\\ruben\\Documents\\Cursos\\Curso C# Exp Uni\\Repo-tpWinform-equipo-J\\tp-winform-equipo-J\\TPWinForm_equipo-J\\negocio\\ArticuloNegocio.cs",
+              "RelativeToolTip": "negocio\\ArticuloNegocio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T04:02:47.828Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\ruben\\Documents\\Cursos\\Curso C# Exp Uni\\Repo-tpWinform-equipo-J\\tp-winform-equipo-J\\TPWinForm_equipo-J\\gestor-articulos\\Form1.cs",
+              "RelativeDocumentMoniker": "gestor-articulos\\Form1.cs",
+              "ToolTip": "C:\\Users\\ruben\\Documents\\Cursos\\Curso C# Exp Uni\\Repo-tpWinform-equipo-J\\tp-winform-equipo-J\\TPWinForm_equipo-J\\gestor-articulos\\Form1.cs",
+              "RelativeToolTip": "gestor-articulos\\Form1.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAD4v0gAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T04:01:39.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ruben\\Documents\\Cursos\\Curso C# Exp Uni\\Repo-tpWinform-equipo-J\\tp-winform-equipo-J\\TPWinForm_equipo-J\\gestor-articulos\\Form1.cs",
               "RelativeDocumentMoniker": "gestor-articulos\\Form1.cs",
@@ -54,15 +144,38 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
+              "Title": "ImagenNegocio.cs",
+              "DocumentMoniker": "C:\\Users\\ruben\\Documents\\Cursos\\Curso C# Exp Uni\\Repo-tpWinform-equipo-J\\tp-winform-equipo-J\\TPWinForm_equipo-J\\negocio\\ImagenNegocio.cs",
+              "RelativeDocumentMoniker": "negocio\\ImagenNegocio.cs",
+              "ToolTip": "C:\\Users\\ruben\\Documents\\Cursos\\Curso C# Exp Uni\\Repo-tpWinform-equipo-J\\tp-winform-equipo-J\\TPWinForm_equipo-J\\negocio\\ImagenNegocio.cs",
+              "RelativeToolTip": "negocio\\ImagenNegocio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T05:51:05.148Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MarcaNegocio.cs",
+              "DocumentMoniker": "C:\\Users\\ruben\\Documents\\Cursos\\Curso C# Exp Uni\\Repo-tpWinform-equipo-J\\tp-winform-equipo-J\\TPWinForm_equipo-J\\negocio\\MarcaNegocio.cs",
+              "RelativeDocumentMoniker": "negocio\\MarcaNegocio.cs",
+              "ToolTip": "C:\\Users\\ruben\\Documents\\Cursos\\Curso C# Exp Uni\\Repo-tpWinform-equipo-J\\tp-winform-equipo-J\\TPWinForm_equipo-J\\negocio\\MarcaNegocio.cs",
+              "RelativeToolTip": "negocio\\MarcaNegocio.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T05:51:06.134Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "frmEditarArticulo.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ruben\\Documents\\Cursos\\Curso C# Exp Uni\\Repo-tpWinform-equipo-J\\tp-winform-equipo-J\\TPWinForm_equipo-J\\gestor-articulos\\frmEditarArticulo.cs",
               "RelativeDocumentMoniker": "gestor-articulos\\frmEditarArticulo.cs",
-              "ToolTip": "C:\\Users\\ruben\\Documents\\Cursos\\Curso C# Exp Uni\\Repo-tpWinform-equipo-J\\tp-winform-equipo-J\\TPWinForm_equipo-J\\gestor-articulos\\frmEditarArticulo.cs [Design]*",
-              "RelativeToolTip": "gestor-articulos\\frmEditarArticulo.cs [Design]*",
+              "ToolTip": "C:\\Users\\ruben\\Documents\\Cursos\\Curso C# Exp Uni\\Repo-tpWinform-equipo-J\\tp-winform-equipo-J\\TPWinForm_equipo-J\\gestor-articulos\\frmEditarArticulo.cs [Design]",
+              "RelativeToolTip": "gestor-articulos\\frmEditarArticulo.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T11:26:46.929Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-12-17T11:26:46.929Z"
             }
           ]
         }

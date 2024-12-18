@@ -111,7 +111,7 @@
             // txtCodigo
             // 
             this.txtCodigo.Location = new System.Drawing.Point(381, 63);
-            this.txtCodigo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCodigo.Margin = new System.Windows.Forms.Padding(4);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(180, 22);
             this.txtCodigo.TabIndex = 6;
@@ -119,7 +119,7 @@
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(381, 113);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(180, 22);
             this.txtNombre.TabIndex = 7;
@@ -127,7 +127,7 @@
             // txtDescripcion
             // 
             this.txtDescripcion.Location = new System.Drawing.Point(381, 171);
-            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(4);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(180, 22);
             this.txtDescripcion.TabIndex = 8;
@@ -135,7 +135,7 @@
             // txtPrecio
             // 
             this.txtPrecio.Location = new System.Drawing.Point(381, 436);
-            this.txtPrecio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPrecio.Margin = new System.Windows.Forms.Padding(4);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(180, 22);
             this.txtPrecio.TabIndex = 9;
@@ -145,7 +145,7 @@
             this.cboMarca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboMarca.FormattingEnabled = true;
             this.cboMarca.Location = new System.Drawing.Point(381, 236);
-            this.cboMarca.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboMarca.Margin = new System.Windows.Forms.Padding(4);
             this.cboMarca.Name = "cboMarca";
             this.cboMarca.Size = new System.Drawing.Size(180, 24);
             this.cboMarca.TabIndex = 10;
@@ -155,7 +155,7 @@
             this.cboCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboCategoria.FormattingEnabled = true;
             this.cboCategoria.Location = new System.Drawing.Point(381, 315);
-            this.cboCategoria.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboCategoria.Margin = new System.Windows.Forms.Padding(4);
             this.cboCategoria.Name = "cboCategoria";
             this.cboCategoria.Size = new System.Drawing.Size(180, 24);
             this.cboCategoria.TabIndex = 11;
@@ -163,7 +163,7 @@
             // btnAceptar
             // 
             this.btnAceptar.Location = new System.Drawing.Point(241, 656);
-            this.btnAceptar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAceptar.Margin = new System.Windows.Forms.Padding(4);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(143, 37);
             this.btnAceptar.TabIndex = 12;
@@ -174,7 +174,7 @@
             // btnCancelar
             // 
             this.btnCancelar.Location = new System.Drawing.Point(441, 656);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(143, 37);
             this.btnCancelar.TabIndex = 13;
@@ -196,7 +196,7 @@
             // txtUrlImagen
             // 
             this.txtUrlImagen.Location = new System.Drawing.Point(381, 377);
-            this.txtUrlImagen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtUrlImagen.Margin = new System.Windows.Forms.Padding(4);
             this.txtUrlImagen.Name = "txtUrlImagen";
             this.txtUrlImagen.Size = new System.Drawing.Size(180, 22);
             this.txtUrlImagen.TabIndex = 15;
@@ -204,10 +204,11 @@
             // 
             // pbxNuevoArticulo
             // 
-            this.pbxNuevoArticulo.Location = new System.Drawing.Point(632, 113);
-            this.pbxNuevoArticulo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbxNuevoArticulo.Location = new System.Drawing.Point(632, 63);
+            this.pbxNuevoArticulo.Margin = new System.Windows.Forms.Padding(4);
             this.pbxNuevoArticulo.Name = "pbxNuevoArticulo";
-            this.pbxNuevoArticulo.Size = new System.Drawing.Size(428, 316);
+            this.pbxNuevoArticulo.Size = new System.Drawing.Size(428, 395);
+            this.pbxNuevoArticulo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxNuevoArticulo.TabIndex = 16;
             this.pbxNuevoArticulo.TabStop = false;
             // 
@@ -233,7 +234,7 @@
             this.Controls.Add(this.lblDescripcion);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.lblCodigo);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmAltaArticulo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Nuevo Articulo";
