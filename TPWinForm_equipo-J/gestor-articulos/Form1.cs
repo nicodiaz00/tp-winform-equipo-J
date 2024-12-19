@@ -52,11 +52,47 @@ namespace gestor_articulos
                 throw ex;
             }
         }
+        private void cargarDesplegableCampo()
+        {
+            cboCampo.Items.Add("Precio");
+            cboCampo.Items.Add("Nombre");
+            cboCampo.Items.Add("Descripcion");
+
+        }
+        private void cargarDesplegableCriterio(string opcion)
+        {
+            
+
+            switch (opcion)
+            {
+                case "Precio":
+                    cboCriterio.Items.Clear();
+                    cboCriterio.Items.Add("Mayor a");
+                    cboCriterio.Items.Add("Menor a");
+                    cboCriterio.Items.Add("Igual a");
+                    break;
+                
+                case "Descripcion":    
+                    cboCriterio.Items.Clear();
+                    cboCriterio.Items.Add("Empieza con");
+                    cboCriterio.Items.Add("Contiene");
+                    cboCriterio.Items.Add("Termina con");
+                    break;
+                case "Nombre":
+                    cboCriterio.Items.Clear();
+                    cboCriterio.Items.Add("Empieza con");
+                    cboCriterio.Items.Add("Contiene");
+                    cboCriterio.Items.Add("Termina con");
+                    break;
+            }
+
+        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
 
             cargarArticulos();
+            cargarDesplegableCampo();
 
             //pbxArticulo.Load(listaArticulos[0].Imagenes[0].UrlImagen);
 
@@ -157,6 +193,12 @@ namespace gestor_articulos
                 cargarImagen(pbxArticulo, listaFiltrada[0].Imagenes[0].UrlImagen);
             }
 
+        }
+
+        private void cboCampo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string opcionCampo = cboCampo.Text.ToString();
+            cargarDesplegableCriterio(opcionCampo);
         }
     }
 }
