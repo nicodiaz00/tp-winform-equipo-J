@@ -125,9 +125,7 @@ namespace gestor_articulos
 
                     if (item.Nombre.ToLower().Contains(nombreArticulo.ToLower()))
                     {
-
                         listaFiltrada.Add(item);
-
                     }
 
                 }
@@ -135,7 +133,6 @@ namespace gestor_articulos
                 if(listaFiltrada.Count > 0)
                 {
                     dgvArticulos.DataSource = null;
-                    
                     dgvArticulos.DataSource = listaFiltrada;
 
                     if (listaFiltrada[0].Imagenes.Count > 0)
@@ -159,9 +156,6 @@ namespace gestor_articulos
                 dgvImagenes.DataSource = listaFiltrada[0].Imagenes;
                 cargarImagen(pbxArticulo, listaFiltrada[0].Imagenes[0].UrlImagen);
             }
-
-            
-
 
         }
     }
