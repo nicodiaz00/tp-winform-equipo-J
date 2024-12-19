@@ -92,5 +92,25 @@ namespace negocio
                 accesoDatosImagen.cerrarConexion();
             }
         }
+
+        public void eliminarImagen(int id, int idArt)
+        {
+            
+            try
+            {
+                AccesoDatos accesodatos = new AccesoDatos();
+                accesodatos.setearConsulta("Delete from IMAGENES where Id = @id and IdArticulo = @idArticulo");
+                accesodatos.setearParametro("@id", id);
+                accesodatos.setearParametro("@idArticulo", idArt);
+
+                accesodatos.ejecutarAccion();
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
     }
 }

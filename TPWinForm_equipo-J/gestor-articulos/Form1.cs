@@ -205,16 +205,26 @@ namespace gestor_articulos
 
         private void btnBusquedaAvanzada_Click(object sender, EventArgs e)
         {
-            string campo = cboCampo.SelectedItem.ToString();
-            string criterio = cboCriterio.SelectedItem.ToString();
-            string filtro = txtBusquedaAvanzada.Text;
-
             List<Articulo> listaFiltrada = new List<Articulo>();
             ArticuloNegocio articuloNegocio = new ArticuloNegocio();
-            listaFiltrada = articuloNegocio.busquedaAvanzada(campo,criterio,filtro);
+            try
+            {
+                string campo = cboCampo.SelectedItem.ToString();
+                string criterio = cboCriterio.SelectedItem.ToString();
+                string filtro = txtBusquedaAvanzada.Text;
 
-            dgvArticulos.DataSource = null;
-            dgvArticulos.DataSource = listaFiltrada;
+
+                listaFiltrada = articuloNegocio.busquedaAvanzada(campo, criterio, filtro);
+
+                dgvArticulos.DataSource = null;
+                dgvArticulos.DataSource = listaFiltrada;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            ;
 
         }
     }

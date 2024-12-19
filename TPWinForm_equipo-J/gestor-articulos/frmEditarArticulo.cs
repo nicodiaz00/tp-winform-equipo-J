@@ -80,17 +80,19 @@ namespace gestor_articulos
         {
             ImagenNegocio imagenNegocio = new ImagenNegocio();
             Imagenes nuevaImagen = new Imagenes();
+            List<Imagenes> listaImagen;
 
             nuevaImagen.IdArticulo = articulo1.Id;
             nuevaImagen.UrlImagen = txtUrlImagen.Text;
 
-            articulo1.Imagenes.Add(nuevaImagen);
+            //articulo1.Imagenes.Add(nuevaImagen);
 
             imagenNegocio.crearImagen(nuevaImagen);
-            
+            listaImagen = imagenNegocio.listarImagenesId(articulo1.Id);
+            actualizarDgvYpicture(dgvImagenes, pbxEditarArticulo, listaImagen);
             MessageBox.Show("Imagen cargada");
 
-            actualizarDgvYpicture(dgvImagenes, pbxEditarArticulo, articulo1.Imagenes);
+            
         }
 
         private void btnAceptarEdicion_Click(object sender, EventArgs e)
@@ -116,6 +118,45 @@ namespace gestor_articulos
             }
 
             
+        }
+
+        private void btnCancelarEdicion_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void dgvImagenes_SelectionChanged(object sender, EventArgs e)
+        {
+            Imagenes imagen = new Imagenes();
+            imagen = (Imagenes)dgvImagenes.CurrentRow.DataBoundItem;
+
+            pbxEditarArticulo.Load(imagen.UrlImagen);
+        }
+
+        private void btnBorrarImagen_Click(object sender, EventArgs e)
+        {
+            Imagenes imagen = new Imagenes();
+            List<Imagenes> listaImagen;
+            ImagenNegocio imagenNegocio = new ImagenNegocio();
+            imagen = (Imagenes)dgvImagenes.CurrentRow.DataBoundItem;
+            int id = imagen.Id;
+            int idArticulo = imagen.IdArticulo;
+
+            try
+            {
+                imagenNegocio.eliminarImagen(id, idArticulo);
+                listaImagen = new List<Imagenes>();
+                listaImagen = imagenNegocio.listarImagenesId(articulo1.Id);
+
+                actualizarDgvYpicture(dgvImagenes, pbxEditarArticulo, listaImagen);
+
+                MessageBox.Show("Imagen eliminada");
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
     }
 }
