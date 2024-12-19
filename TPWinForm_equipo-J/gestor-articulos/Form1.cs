@@ -61,8 +61,6 @@ namespace gestor_articulos
         }
         private void cargarDesplegableCriterio(string opcion)
         {
-            
-
             switch (opcion)
             {
                 case "Precio":
@@ -71,7 +69,6 @@ namespace gestor_articulos
                     cboCriterio.Items.Add("Menor a");
                     cboCriterio.Items.Add("Igual a");
                     break;
-                
                 case "Descripcion":    
                     cboCriterio.Items.Clear();
                     cboCriterio.Items.Add("Empieza con");
@@ -93,7 +90,7 @@ namespace gestor_articulos
 
             cargarArticulos();
             cargarDesplegableCampo();
-
+           
             //pbxArticulo.Load(listaArticulos[0].Imagenes[0].UrlImagen);
 
         }
@@ -198,7 +195,27 @@ namespace gestor_articulos
         private void cboCampo_SelectedIndexChanged(object sender, EventArgs e)
         {
             string opcionCampo = cboCampo.Text.ToString();
-            cargarDesplegableCriterio(opcionCampo);
+
+            
+                cargarDesplegableCriterio(opcionCampo);
+                btnBusquedaAvanzada.Enabled = true;
+            
+            
+        }
+
+        private void btnBusquedaAvanzada_Click(object sender, EventArgs e)
+        {
+            string campo = cboCampo.SelectedItem.ToString();
+            string criterio = cboCriterio.SelectedItem.ToString();
+            string filtro = txtBusquedaAvanzada.Text;
+
+            List<Articulo> listaFiltrada = new List<Articulo>();
+            ArticuloNegocio articuloNegocio = new ArticuloNegocio();
+            listaFiltrada = articuloNegocio.busquedaAvanzada(campo,criterio,filtro);
+
+            dgvArticulos.DataSource = null;
+            dgvArticulos.DataSource = listaFiltrada;
+
         }
     }
 }

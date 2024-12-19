@@ -105,6 +105,103 @@ namespace negocio
                 accesoDatos.cerrarConexion();
             }
         }
+
+        public List<Articulo> busquedaAvanzada(string campo, string criterio,string filtro)
+        {
+            List<Articulo> listaFiltrada = new List<Articulo>();
+            List<Imagenes> listaImagenes = new List<Imagenes>();
+            AccesoDatos accesoDatos = new AccesoDatos();
+            ImagenNegocio imagenNegocio = new ImagenNegocio();
+
+            try
+            {
+                string consulta = "Select A.Id, A.Codigo, A.Nombre, A.Descripcion, A.IdMarca, A.IdCategoria, C.descripcion as Categoria, M.descripcion as Marca, A.Precio  from ARTICULOS A, CATEGORIAS C, MARCAS M where A.IdMarca = M.Id and A.IdCategoria = C.Id and ";
+                
+
+               if(campo == "Precio")
+                {
+                    switch (criterio)
+                    {
+                        case "Mayor a":
+                            consulta += "A.Precio > " + filtro;
+                            break;
+                        case "Menor a":
+                            consulta += "A.Precio < " + filtro;
+                            break;
+                        case "Igual a":
+                            consulta += "A.Precio = " + filtro;
+                            break;
+                    }
+
+                }
+                else if( campo == "Nombre")
+                {
+                    switch (criterio)
+                    {
+                        case "Empieza con":
+                            consulta += "A.Nombre like '" + filtro + "%' ";
+                            break;
+                        case "Termina con":
+                            consulta += "A.Nombre like '%" + filtro + "'";
+                            break;
+                        case "Contiene":
+                            consulta += "% A.Nombre like '%" + filtro + "%'";
+                            break;
+                    }
+
+                }
+                else
+                {
+                    switch (criterio)
+                    {
+                        case "Empieza con":
+                            consulta += "A.Descripcion like '" + filtro + "%' ";
+                            break;
+                        case "Termina con":
+                            consulta += "A.Descripcion like '%" + filtro + "'";
+                            break;
+                        case "Contiene":
+                            consulta += "% A.Descripcion like '%" + filtro + "%'";
+                            break;
+                    }
+                }
+                accesoDatos.setearConsulta(consulta);
+                accesoDatos.ejecutarLectura();
+
+                while(accesoDatos.Lector.Read())
+                {
+                    Articulo articulo = new Articulo();
+                    articulo.Id = (int)accesoDatos.Lector["Id"];
+                    articulo.CodigoArticulo = (string)accesoDatos.Lector["Codigo"];
+                    articulo.Nombre = (string)accesoDatos.Lector["Nombre"];
+                    articulo.Descripcion = (string)accesoDatos.Lector["Descripcion"];
+                    articulo.Precio = Math.Round((decimal)accesoDatos.Lector["Precio"], 0);
+
+                    articulo.Marca = new Marcas();
+                    articulo.Marca.Id = (int)accesoDatos.Lector["IdMarca"];
+                    articulo.Marca.Descripcion = (string)accesoDatos.Lector["Marca"];
+
+                    articulo.Categoria = new Categoria();
+                    articulo.Categoria.Id = (int)accesoDatos.Lector["IdCategoria"];
+                    articulo.Categoria.DescripcionCategoria = (string)accesoDatos.Lector["Categoria"];
+
+                    articulo.Imagenes = imagenNegocio.listarImagenesId(articulo.Id);
+                    listaFiltrada.Add(articulo);
+                }
+
+                return listaFiltrada;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                accesoDatos.cerrarConexion();
+            }
+            
+        }
         
     }
 }

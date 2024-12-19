@@ -192,6 +192,7 @@
             this.btnBusquedaAvanzada.TabIndex = 14;
             this.btnBusquedaAvanzada.Text = "Buscar";
             this.btnBusquedaAvanzada.UseVisualStyleBackColor = true;
+            this.btnBusquedaAvanzada.Click += new System.EventHandler(this.btnBusquedaAvanzada_Click);
             // 
             // Form1
             // 
