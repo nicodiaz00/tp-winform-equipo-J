@@ -15,75 +15,14 @@ namespace gestor_articulos
 {
     public partial class frmAltaArticulo : Form
     {
+        private string urlPlaceHolder = "https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg";
 
         public frmAltaArticulo()
         {
             InitializeComponent();
         }
 
-        public void camposVacios(TextBox texto, ErrorProvider errorProvider)
-        {
-            bool error = false;
-
-            if (texto.Text == "")
-            {
-                error = true;
-
-            }
-            if (error)
-            {
-                errorProvider.SetError(texto, "No puede estar vacio");
-                btnAceptar.Enabled = false;
-            }
-            else
-            {
-                errorProvider.Clear();
-                btnAceptar.Enabled=false;
-            }
-        }
-        public void caracteresEspeciales(TextBox texto, ErrorProvider errorProvider)
-        {
-            string caracteres = "[,.'!#$%&)=?¡*¨\\[\\]:_;,.-]";
-            bool error = false;
-            if (Regex.IsMatch(texto.Text, caracteres))
-            {
-                error = true;
-                
-            }
-            if (error)
-            {
-                errorProviderCaracteres.SetError(texto, "No puede ingresar caracteres especiales ,.'!#$%&)= ... ");
-                btnAceptar.Enabled = false;
-            }
-            else
-            {
-                errorProviderCaracteres.Clear();
-                btnAceptar.Enabled=true;
-            }
-        }
-        public void numerosPositivos(TextBox texto, ErrorProvider errorProvider)
-        {
-            bool error = false;
-            int valor;
-            if(texto.Text != ""){
-                valor = int.Parse(texto.Text);
-                if (valor < 0)
-                {
-                    error = true;
-                }
-                if (error)
-                {
-                    errorProviderNumero.SetError(texto, "Ingrese un valor mayor a CERO");
-                }
-                else
-                {
-                    errorProviderNumero.Clear();
-                }
-            }
-            
-
-            
-        }
+        
         private void frmAltaArticulo_Load(object sender, EventArgs e)
         {
             MarcaNegocio marcaNegocio = new MarcaNegocio();
@@ -112,45 +51,63 @@ namespace gestor_articulos
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            Articulo articuloNuevo = new Articulo();
-            Imagenes imagenNueva = new Imagenes();
-            ArticuloNegocio articuloNegocio = new ArticuloNegocio();
-            ImagenNegocio imagenNegocio = new ImagenNegocio();
-            AccesoDatos accesoDatos = new AccesoDatos();
-
-            try
+            if(txtNombre.Text == "")
             {
-                articuloNuevo.CodigoArticulo = txtCodigo.Text;
-                articuloNuevo.Nombre = txtNombre.Text;
-                articuloNuevo.Descripcion = txtDescripcion.Text;
-                articuloNuevo.Marca = (Marcas)cboMarca.SelectedItem;
-                articuloNuevo.Categoria = (Categoria)cboCategoria.SelectedItem;
-                articuloNuevo.Precio = decimal.Parse(txtPrecio.Text);
-                
-                int idCreado= articuloNegocio.agregarArticulo(articuloNuevo);
+                errorProviderVacio.SetError(txtNombre, "Campo Requerido");
+            }
+            if(txtCodigo.Text == "")
+            {
+                errorProviderVacio.SetError(txtCodigo, "Campo Requerido");
+            }
+            if(txtPrecio.Text == "")
+            {
+                errorProviderVacio.SetError(txtPrecio, "Campo requerido");
+            }
+            if(txtDescripcion.Text == "")
+            {
+                errorProviderVacio.SetError(txtDescripcion, "Campo requerido");
+            }
+            else
+            {
+                Articulo articuloNuevo = new Articulo();
+                Imagenes imagenNueva = new Imagenes();
+                ArticuloNegocio articuloNegocio = new ArticuloNegocio();
+                ImagenNegocio imagenNegocio = new ImagenNegocio();
+                AccesoDatos accesoDatos = new AccesoDatos();
 
-                imagenNueva.IdArticulo = idCreado;
-                if (!(txtUrlImagen.Text == ""))
+                try
                 {
-                    imagenNueva.UrlImagen = txtUrlImagen.Text;
+                    articuloNuevo.CodigoArticulo = txtCodigo.Text;
+                    articuloNuevo.Nombre = txtNombre.Text;
+                    articuloNuevo.Descripcion = txtDescripcion.Text;
+                    articuloNuevo.Marca = (Marcas)cboMarca.SelectedItem;
+                    articuloNuevo.Categoria = (Categoria)cboCategoria.SelectedItem;
+                    articuloNuevo.Precio = decimal.Parse(txtPrecio.Text);
 
-                    imagenNegocio.crearImagen(imagenNueva);
+                    int idCreado = articuloNegocio.agregarArticulo(articuloNuevo);
+
+                    imagenNueva.IdArticulo = idCreado;
+                    if (!(txtUrlImagen.Text == ""))
+                    {
+                        imagenNueva.UrlImagen = txtUrlImagen.Text;
+
+                        imagenNegocio.crearImagen(imagenNueva);
+
+                    }
+
+
+                    MessageBox.Show("Articulo agregado");
+                    Close();
+
 
                 }
+                catch (Exception ex)
+                {
 
-
-
-                MessageBox.Show("Articulo agregado");
-                Close();
-
-
+                    throw ex;
+                }
             }
-            catch (Exception ex)
-            {
-
-                throw ex;
-            }
-            
+                     
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -160,28 +117,39 @@ namespace gestor_articulos
 
         private void txtUrlImagen_Leave(object sender, EventArgs e)
         {
-            if(!(txtUrlImagen.Text == ""))
+
+
+            if (!string.IsNullOrWhiteSpace(txtUrlImagen.Text)) 
             {
-                pbxNuevoArticulo.Load(txtUrlImagen.Text);
+                try
+                {
+                    pbxNuevoArticulo.Load(txtUrlImagen.Text); 
+                }
+                catch
+                {
+                    pbxNuevoArticulo.Load(urlPlaceHolder); 
+                }
             }
-            
+            else
+            {
+                pbxNuevoArticulo.Load(urlPlaceHolder);
+            }
+
         }
 
-        private void txtCodigo_Leave(object sender, EventArgs e)
+        private void txtPrecio_KeyPress(object sender, KeyPressEventArgs e)
         {
-            camposVacios(txtCodigo,errorProviderVacio);
-        }
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)Keys.Back && e.KeyChar != '.')
+            {
 
-        private void txtNombre_Leave(object sender, EventArgs e)
-        {
-            camposVacios(txtNombre,errorProviderVacio);
-            caracteresEspeciales(txtNombre, errorProviderCaracteres);
-        }
+                e.Handled = true;
+            }
 
-        private void txtPrecio_Leave(object sender, EventArgs e)
-        {
-            camposVacios(txtPrecio,errorProviderVacio);
-            numerosPositivos(txtPrecio, errorProviderNumero);
+            else if (e.KeyChar == '.' && ((TextBox)sender).Text.Contains("."))
+            {
+
+                e.Handled = true;
+            }
         }
     }
 }

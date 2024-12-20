@@ -115,7 +115,7 @@
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(136, 20);
             this.txtCodigo.TabIndex = 6;
-            this.txtCodigo.Leave += new System.EventHandler(this.txtCodigo_Leave);
+            //this.txtCodigo.Leave += new System.EventHandler(this.txtCodigo_Leave);
             // 
             // txtNombre
             // 
@@ -123,7 +123,7 @@
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(136, 20);
             this.txtNombre.TabIndex = 7;
-            this.txtNombre.Leave += new System.EventHandler(this.txtNombre_Leave);
+            //this.txtNombre.Leave += new System.EventHandler(this.txtNombre_Leave);
             // 
             // txtDescripcion
             // 
@@ -138,7 +138,8 @@
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(136, 20);
             this.txtPrecio.TabIndex = 9;
-            this.txtPrecio.Leave += new System.EventHandler(this.txtPrecio_Leave);
+            this.txtPrecio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrecio_KeyPress);
+            //this.txtPrecio.Leave += new System.EventHandler(this.txtPrecio_Leave);
             // 
             // cboMarca
             // 

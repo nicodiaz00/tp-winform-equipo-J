@@ -3,16 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\nico\\Documents\\c#\\experiencia-universidad\\tp-winform-equipo-J\\TPWinForm_equipo-J\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0760F4D3-1D01-41EF-AFC8-799F7375C31B}|gestor-articulos\\gestor-articulos.csproj|C:\\Users\\nico\\Documents\\c#\\experiencia-universidad\\tp-winform-equipo-J\\TPWinForm_equipo-J\\gestor-articulos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0760F4D3-1D01-41EF-AFC8-799F7375C31B}|gestor-articulos\\gestor-articulos.csproj|solutionrelative:gestor-articulos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0760F4D3-1D01-41EF-AFC8-799F7375C31B}|gestor-articulos\\gestor-articulos.csproj|c:\\users\\nico\\documents\\c#\\experiencia-universidad\\tp-winform-equipo-j\\tpwinform_equipo-j\\gestor-articulos\\frmaltaarticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0760F4D3-1D01-41EF-AFC8-799F7375C31B}|gestor-articulos\\gestor-articulos.csproj|solutionrelative:gestor-articulos\\frmaltaarticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{0760F4D3-1D01-41EF-AFC8-799F7375C31B}|gestor-articulos\\gestor-articulos.csproj|C:\\Users\\nico\\Documents\\c#\\experiencia-universidad\\tp-winform-equipo-J\\TPWinForm_equipo-J\\gestor-articulos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0760F4D3-1D01-41EF-AFC8-799F7375C31B}|gestor-articulos\\gestor-articulos.csproj|solutionrelative:gestor-articulos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0760F4D3-1D01-41EF-AFC8-799F7375C31B}|gestor-articulos\\gestor-articulos.csproj|C:\\Users\\nico\\Documents\\c#\\experiencia-universidad\\tp-winform-equipo-J\\TPWinForm_equipo-J\\gestor-articulos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0760F4D3-1D01-41EF-AFC8-799F7375C31B}|gestor-articulos\\gestor-articulos.csproj|solutionrelative:gestor-articulos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0760F4D3-1D01-41EF-AFC8-799F7375C31B}|gestor-articulos\\gestor-articulos.csproj|c:\\users\\nico\\documents\\c#\\experiencia-universidad\\tp-winform-equipo-j\\tpwinform_equipo-j\\gestor-articulos\\frmaltaarticulo.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0760F4D3-1D01-41EF-AFC8-799F7375C31B}|gestor-articulos\\gestor-articulos.csproj|solutionrelative:gestor-articulos\\frmaltaarticulo.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0760F4D3-1D01-41EF-AFC8-799F7375C31B}|gestor-articulos\\gestor-articulos.csproj|c:\\users\\nico\\documents\\c#\\experiencia-universidad\\tp-winform-equipo-j\\tpwinform_equipo-j\\gestor-articulos\\frmaltaarticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{0760F4D3-1D01-41EF-AFC8-799F7375C31B}|gestor-articulos\\gestor-articulos.csproj|solutionrelative:gestor-articulos\\frmaltaarticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0760F4D3-1D01-41EF-AFC8-799F7375C31B}|gestor-articulos\\gestor-articulos.csproj|C:\\Users\\nico\\Documents\\c#\\experiencia-universidad\\tp-winform-equipo-J\\TPWinForm_equipo-J\\gestor-articulos\\frmeditararticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0760F4D3-1D01-41EF-AFC8-799F7375C31B}|gestor-articulos\\gestor-articulos.csproj|solutionrelative:gestor-articulos\\frmeditararticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0760F4D3-1D01-41EF-AFC8-799F7375C31B}|gestor-articulos\\gestor-articulos.csproj|C:\\Users\\nico\\Documents\\c#\\experiencia-universidad\\tp-winform-equipo-J\\TPWinForm_equipo-J\\gestor-articulos\\frmeditararticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0760F4D3-1D01-41EF-AFC8-799F7375C31B}|gestor-articulos\\gestor-articulos.csproj|solutionrelative:gestor-articulos\\frmeditararticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0760F4D3-1D01-41EF-AFC8-799F7375C31B}|gestor-articulos\\gestor-articulos.csproj|C:\\Users\\nico\\Documents\\c#\\experiencia-universidad\\tp-winform-equipo-J\\TPWinForm_equipo-J\\gestor-articulos\\frmdetalle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0760F4D3-1D01-41EF-AFC8-799F7375C31B}|gestor-articulos\\gestor-articulos.csproj|solutionrelative:gestor-articulos\\frmdetalle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0760F4D3-1D01-41EF-AFC8-799F7375C31B}|gestor-articulos\\gestor-articulos.csproj|C:\\Users\\nico\\Documents\\c#\\experiencia-universidad\\tp-winform-equipo-J\\TPWinForm_equipo-J\\gestor-articulos\\frmdetalle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,22 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{95E763F6-4A6D-4E0E-B876-0C16AF645C0B}|negocio\\negocio.csproj|C:\\Users\\nico\\Documents\\c#\\experiencia-universidad\\tp-winform-equipo-J\\TPWinForm_equipo-J\\negocio\\articulonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{95E763F6-4A6D-4E0E-B876-0C16AF645C0B}|negocio\\negocio.csproj|solutionrelative:negocio\\articulonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0760F4D3-1D01-41EF-AFC8-799F7375C31B}|gestor-articulos\\gestor-articulos.csproj|C:\\Users\\nico\\Documents\\c#\\experiencia-universidad\\tp-winform-equipo-J\\TPWinForm_equipo-J\\gestor-articulos\\frmdetalle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{0760F4D3-1D01-41EF-AFC8-799F7375C31B}|gestor-articulos\\gestor-articulos.csproj|solutionrelative:gestor-articulos\\frmdetalle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0760F4D3-1D01-41EF-AFC8-799F7375C31B}|gestor-articulos\\gestor-articulos.csproj|C:\\Users\\nico\\Documents\\c#\\experiencia-universidad\\tp-winform-equipo-J\\TPWinForm_equipo-J\\gestor-articulos\\frmeditararticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0760F4D3-1D01-41EF-AFC8-799F7375C31B}|gestor-articulos\\gestor-articulos.csproj|solutionrelative:gestor-articulos\\frmeditararticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0760F4D3-1D01-41EF-AFC8-799F7375C31B}|gestor-articulos\\gestor-articulos.csproj|C:\\Users\\nico\\Documents\\c#\\experiencia-universidad\\tp-winform-equipo-J\\TPWinForm_equipo-J\\gestor-articulos\\frmeditararticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{0760F4D3-1D01-41EF-AFC8-799F7375C31B}|gestor-articulos\\gestor-articulos.csproj|solutionrelative:gestor-articulos\\frmeditararticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0760F4D3-1D01-41EF-AFC8-799F7375C31B}|gestor-articulos\\gestor-articulos.csproj|C:\\Users\\nico\\Documents\\c#\\experiencia-universidad\\tp-winform-equipo-J\\TPWinForm_equipo-J\\gestor-articulos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{0760F4D3-1D01-41EF-AFC8-799F7375C31B}|gestor-articulos\\gestor-articulos.csproj|solutionrelative:gestor-articulos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,20 +70,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "frmAltaArticulo.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\nico\\Documents\\c#\\experiencia-universidad\\tp-winform-equipo-J\\TPWinForm_equipo-J\\gestor-articulos\\frmAltaArticulo.Designer.cs",
+              "RelativeDocumentMoniker": "gestor-articulos\\frmAltaArticulo.Designer.cs",
+              "ToolTip": "C:\\Users\\nico\\Documents\\c#\\experiencia-universidad\\tp-winform-equipo-J\\TPWinForm_equipo-J\\gestor-articulos\\frmAltaArticulo.Designer.cs",
+              "RelativeToolTip": "gestor-articulos\\frmAltaArticulo.Designer.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAAAHUAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T20:03:27.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "frmAltaArticulo.cs",
               "DocumentMoniker": "C:\\Users\\nico\\Documents\\c#\\experiencia-universidad\\tp-winform-equipo-J\\TPWinForm_equipo-J\\gestor-articulos\\frmAltaArticulo.cs",
               "RelativeDocumentMoniker": "gestor-articulos\\frmAltaArticulo.cs",
               "ToolTip": "C:\\Users\\nico\\Documents\\c#\\experiencia-universidad\\tp-winform-equipo-J\\TPWinForm_equipo-J\\gestor-articulos\\frmAltaArticulo.cs",
               "RelativeToolTip": "gestor-articulos\\frmAltaArticulo.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAQwEUAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwBcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-20T15:59:11.656Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "frmDetalle.cs",
               "DocumentMoniker": "C:\\Users\\nico\\Documents\\c#\\experiencia-universidad\\tp-winform-equipo-J\\TPWinForm_equipo-J\\gestor-articulos\\frmDetalle.cs",
               "RelativeDocumentMoniker": "gestor-articulos\\frmDetalle.cs",
@@ -92,7 +109,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "frmDetalle.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\nico\\Documents\\c#\\experiencia-universidad\\tp-winform-equipo-J\\TPWinForm_equipo-J\\gestor-articulos\\frmDetalle.cs",
               "RelativeDocumentMoniker": "gestor-articulos\\frmDetalle.cs",
@@ -104,7 +121,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "ImagenNegocio.cs",
               "DocumentMoniker": "C:\\Users\\nico\\Documents\\c#\\experiencia-universidad\\tp-winform-equipo-J\\TPWinForm_equipo-J\\negocio\\ImagenNegocio.cs",
               "RelativeDocumentMoniker": "negocio\\ImagenNegocio.cs",
@@ -117,7 +134,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "ArticuloNegocio.cs",
               "DocumentMoniker": "C:\\Users\\nico\\Documents\\c#\\experiencia-universidad\\tp-winform-equipo-J\\TPWinForm_equipo-J\\negocio\\ArticuloNegocio.cs",
               "RelativeDocumentMoniker": "negocio\\ArticuloNegocio.cs",
@@ -130,33 +147,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "frmEditarArticulo.cs",
               "DocumentMoniker": "C:\\Users\\nico\\Documents\\c#\\experiencia-universidad\\tp-winform-equipo-J\\TPWinForm_equipo-J\\gestor-articulos\\frmEditarArticulo.cs",
               "RelativeDocumentMoniker": "gestor-articulos\\frmEditarArticulo.cs",
               "ToolTip": "C:\\Users\\nico\\Documents\\c#\\experiencia-universidad\\tp-winform-equipo-J\\TPWinForm_equipo-J\\gestor-articulos\\frmEditarArticulo.cs",
               "RelativeToolTip": "gestor-articulos\\frmEditarArticulo.cs",
-              "ViewState": "AgIAAGwAAAAAAAAAAAAgwI0AAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAAAI0AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-18T16:51:23.983Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\nico\\Documents\\c#\\experiencia-universidad\\tp-winform-equipo-J\\TPWinForm_equipo-J\\gestor-articulos\\Form1.cs",
               "RelativeDocumentMoniker": "gestor-articulos\\Form1.cs",
               "ToolTip": "C:\\Users\\nico\\Documents\\c#\\experiencia-universidad\\tp-winform-equipo-J\\TPWinForm_equipo-J\\gestor-articulos\\Form1.cs",
               "RelativeToolTip": "gestor-articulos\\Form1.cs",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAmwAkBAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-18T14:12:29.878Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 2,
               "Title": "Form1.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\nico\\Documents\\c#\\experiencia-universidad\\tp-winform-equipo-J\\TPWinForm_equipo-J\\gestor-articulos\\Form1.cs",
               "RelativeDocumentMoniker": "gestor-articulos\\Form1.cs",
@@ -168,7 +185,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "frmAltaArticulo.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\nico\\Documents\\c#\\experiencia-universidad\\tp-winform-equipo-J\\TPWinForm_equipo-J\\gestor-articulos\\frmAltaArticulo.cs",
               "RelativeDocumentMoniker": "gestor-articulos\\frmAltaArticulo.cs",
@@ -180,7 +197,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
               "Title": "frmEditarArticulo.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\nico\\Documents\\c#\\experiencia-universidad\\tp-winform-equipo-J\\TPWinForm_equipo-J\\gestor-articulos\\frmEditarArticulo.cs",
               "RelativeDocumentMoniker": "gestor-articulos\\frmEditarArticulo.cs",
