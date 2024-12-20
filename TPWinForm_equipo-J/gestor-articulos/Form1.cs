@@ -256,5 +256,18 @@ namespace gestor_articulos
             }
 
         }
+
+        private void btnDetalle_Click(object sender, EventArgs e)
+        {
+            Articulo articuloDetalle = new Articulo();
+
+            articuloDetalle = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+            
+            frmDetalle frmDetalle = new frmDetalle(articuloDetalle);
+            frmDetalle.ShowDialog();
+
+            
+            
+        }
     }
 }

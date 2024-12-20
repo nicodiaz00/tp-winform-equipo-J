@@ -32,3 +32,4 @@ C:\Users\ruben\Documents\Cursos\Curso C# Exp Uni\Repo-tpWinform-equipo-J\tp-winf
 C:\Users\ruben\Documents\Cursos\Curso C# Exp Uni\Repo-tpWinform-equipo-J\tp-winform-equipo-J\TPWinForm_equipo-J\gestor-articulos\obj\Debug\gestor-a.5F914CF4.Up2Date
 C:\Users\ruben\Documents\Cursos\Curso C# Exp Uni\Repo-tpWinform-equipo-J\tp-winform-equipo-J\TPWinForm_equipo-J\gestor-articulos\obj\Debug\gestor-articulos.exe
 C:\Users\ruben\Documents\Cursos\Curso C# Exp Uni\Repo-tpWinform-equipo-J\tp-winform-equipo-J\TPWinForm_equipo-J\gestor-articulos\obj\Debug\gestor-articulos.pdb
+C:\Users\nico\Documents\c#\experiencia-universidad\tp-winform-equipo-J\TPWinForm_equipo-J\gestor-articulos\obj\Debug\gestor_articulos.frmDetalle.resources
