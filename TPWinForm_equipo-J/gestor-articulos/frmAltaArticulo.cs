@@ -9,16 +9,81 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace gestor_articulos
 {
     public partial class frmAltaArticulo : Form
     {
+
         public frmAltaArticulo()
         {
             InitializeComponent();
         }
 
+        public void camposVacios(TextBox texto, ErrorProvider errorProvider)
+        {
+            bool error = false;
+
+            if (texto.Text == "")
+            {
+                error = true;
+
+            }
+            if (error)
+            {
+                errorProvider.SetError(texto, "No puede estar vacio");
+                btnAceptar.Enabled = false;
+            }
+            else
+            {
+                errorProvider.Clear();
+                btnAceptar.Enabled=false;
+            }
+        }
+        public void caracteresEspeciales(TextBox texto, ErrorProvider errorProvider)
+        {
+            string caracteres = "[,.'!#$%&)=?¡*¨\\[\\]:_;,.-]";
+            bool error = false;
+            if (Regex.IsMatch(texto.Text, caracteres))
+            {
+                error = true;
+                
+            }
+            if (error)
+            {
+                errorProviderCaracteres.SetError(texto, "No puede ingresar caracteres especiales ,.'!#$%&)= ... ");
+                btnAceptar.Enabled = false;
+            }
+            else
+            {
+                errorProviderCaracteres.Clear();
+                btnAceptar.Enabled=true;
+            }
+        }
+        public void numerosPositivos(TextBox texto, ErrorProvider errorProvider)
+        {
+            bool error = false;
+            int valor;
+            if(texto.Text != ""){
+                valor = int.Parse(texto.Text);
+                if (valor < 0)
+                {
+                    error = true;
+                }
+                if (error)
+                {
+                    errorProviderNumero.SetError(texto, "Ingrese un valor mayor a CERO");
+                }
+                else
+                {
+                    errorProviderNumero.Clear();
+                }
+            }
+            
+
+            
+        }
         private void frmAltaArticulo_Load(object sender, EventArgs e)
         {
             MarcaNegocio marcaNegocio = new MarcaNegocio();
@@ -100,6 +165,23 @@ namespace gestor_articulos
                 pbxNuevoArticulo.Load(txtUrlImagen.Text);
             }
             
+        }
+
+        private void txtCodigo_Leave(object sender, EventArgs e)
+        {
+            camposVacios(txtCodigo,errorProviderVacio);
+        }
+
+        private void txtNombre_Leave(object sender, EventArgs e)
+        {
+            camposVacios(txtNombre,errorProviderVacio);
+            caracteresEspeciales(txtNombre, errorProviderCaracteres);
+        }
+
+        private void txtPrecio_Leave(object sender, EventArgs e)
+        {
+            camposVacios(txtPrecio,errorProviderVacio);
+            numerosPositivos(txtPrecio, errorProviderNumero);
         }
     }
 }

@@ -23,12 +23,13 @@ namespace gestor_articulos
                 
                 pictureBox.Load(urlImagen);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
 
                 pictureBox.Load(urlPlaceHolder);
             }
         }
+        
         
         public Form1()
         {

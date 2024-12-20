@@ -93,7 +93,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 287);
+            this.label4.Location = new System.Drawing.Point(12, 304);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(63, 13);
             this.label4.TabIndex = 4;
@@ -185,7 +185,7 @@
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(93, 287);
+            this.txtDescripcion.Location = new System.Drawing.Point(93, 304);
             this.txtDescripcion.Multiline = true;
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.ReadOnly = true;
@@ -196,7 +196,7 @@
             // 
             this.pcbDetalle.Location = new System.Drawing.Point(299, 57);
             this.pcbDetalle.Name = "pcbDetalle";
-            this.pcbDetalle.Size = new System.Drawing.Size(308, 213);
+            this.pcbDetalle.Size = new System.Drawing.Size(308, 241);
             this.pcbDetalle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbDetalle.TabIndex = 17;
             this.pcbDetalle.TabStop = false;
@@ -214,9 +214,11 @@
             // 
             this.dgvImagenesDetalle.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvImagenesDetalle.Location = new System.Drawing.Point(15, 373);
+            this.dgvImagenesDetalle.MultiSelect = false;
             this.dgvImagenesDetalle.Name = "dgvImagenesDetalle";
             this.dgvImagenesDetalle.Size = new System.Drawing.Size(592, 61);
             this.dgvImagenesDetalle.TabIndex = 19;
+            this.dgvImagenesDetalle.SelectionChanged += new System.EventHandler(this.dgvImagenesDetalle_SelectionChanged);
             // 
             // frmDetalle
             // 

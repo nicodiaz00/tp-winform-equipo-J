@@ -14,6 +14,7 @@ namespace gestor_articulos
     public partial class frmDetalle : Form
     {
         private Articulo articulo;
+        private string urlPlaceHolder = "https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg";
         public frmDetalle()
         {
             InitializeComponent();
@@ -35,13 +36,18 @@ namespace gestor_articulos
             txtDescripcion.Text = articulo.Descripcion.ToString();
             dgvImagenesDetalle.DataSource = articulo.Imagenes;
 
-            pcbDetalle.Load(articulo.Imagenes[0].UrlImagen);
+           
 
         }
 
         private void btnCerrarDetalle_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void dgvImagenesDetalle_SelectionChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }
