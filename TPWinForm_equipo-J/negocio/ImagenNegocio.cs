@@ -93,16 +93,14 @@ namespace negocio
             }
         }
 
-        public void eliminarImagen(int id, int idArt)
+        public void eliminarImagenDeArticulo(int id, int idArt)
         {
-            
+            AccesoDatos accesodatos = new AccesoDatos();
             try
             {
-                AccesoDatos accesodatos = new AccesoDatos();
                 accesodatos.setearConsulta("Delete from IMAGENES where Id = @id and IdArticulo = @idArticulo");
                 accesodatos.setearParametro("@id", id);
                 accesodatos.setearParametro("@idArticulo", idArt);
-
                 accesodatos.ejecutarAccion();
 
             }
@@ -110,6 +108,30 @@ namespace negocio
             {
 
                 throw ex;
+            }
+            finally
+            {
+                accesodatos.cerrarConexion();
+            }
+        }
+        public void eliminarImagen(int idArticulo)
+        {
+            AccesoDatos accesodatos = new AccesoDatos();
+            try
+            {
+                accesodatos.setearConsulta("Delete from IMAGENES where IdArticulo = @idArticulo");
+                accesodatos.setearParametro("@idArticulo", idArticulo);
+                accesodatos.ejecutarAccion();
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                accesodatos.cerrarConexion();
             }
         }
     }

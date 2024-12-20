@@ -144,7 +144,7 @@ namespace gestor_articulos
 
             try
             {
-                imagenNegocio.eliminarImagen(id, idArticulo);
+                imagenNegocio.eliminarImagenDeArticulo(id, idArticulo);
                 listaImagen = new List<Imagenes>();
                 listaImagen = imagenNegocio.listarImagenesId(articulo1.Id);
 

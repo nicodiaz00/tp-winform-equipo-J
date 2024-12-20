@@ -227,5 +227,34 @@ namespace gestor_articulos
             ;
 
         }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+           
+            ArticuloNegocio articuloNegocio = new ArticuloNegocio();
+            ImagenNegocio imagenNegocio = new ImagenNegocio();
+            
+
+            Articulo articulo = new Articulo();
+            
+
+            try
+            {
+
+                articulo = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+                articuloNegocio.eliminarArticulo(articulo.Id);
+                imagenNegocio.eliminarImagen(articulo.Id);
+
+                cargarArticulos();
+                MessageBox.Show("Articulo Eliminado");
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+
+        }
     }
 }
