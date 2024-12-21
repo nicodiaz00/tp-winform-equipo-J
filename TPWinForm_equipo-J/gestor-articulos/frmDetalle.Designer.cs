@@ -216,6 +216,8 @@
             this.dgvImagenesDetalle.Location = new System.Drawing.Point(15, 373);
             this.dgvImagenesDetalle.MultiSelect = false;
             this.dgvImagenesDetalle.Name = "dgvImagenesDetalle";
+            this.dgvImagenesDetalle.ReadOnly = true;
+            this.dgvImagenesDetalle.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvImagenesDetalle.Size = new System.Drawing.Size(592, 61);
             this.dgvImagenesDetalle.TabIndex = 19;
             this.dgvImagenesDetalle.SelectionChanged += new System.EventHandler(this.dgvImagenesDetalle_SelectionChanged);

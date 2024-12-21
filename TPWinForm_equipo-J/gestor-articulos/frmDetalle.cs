@@ -36,7 +36,10 @@ namespace gestor_articulos
             txtDescripcion.Text = articulo.Descripcion.ToString();
             dgvImagenesDetalle.DataSource = articulo.Imagenes;
 
-           
+           if(dgvImagenesDetalle.CurrentRow == null)
+            {
+                pcbDetalle.Load(urlPlaceHolder);
+            }
 
         }
 
@@ -47,7 +50,22 @@ namespace gestor_articulos
 
         private void dgvImagenesDetalle_SelectionChanged(object sender, EventArgs e)
         {
-            
+            if (dgvImagenesDetalle != null)
+            {
+                Imagenes imagen = new Imagenes();
+
+                imagen = (Imagenes)dgvImagenesDetalle.CurrentRow.DataBoundItem;
+
+                try
+                {
+                    pcbDetalle.Load(imagen.UrlImagen);
+                }
+                catch (Exception)
+                {
+
+                    pcbDetalle.Load(urlPlaceHolder);
+                }
+            }
         }
     }
 }

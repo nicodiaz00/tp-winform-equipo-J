@@ -21,8 +21,6 @@ namespace gestor_articulos
         {
             InitializeComponent();
         }
-
-        
         private void frmAltaArticulo_Load(object sender, EventArgs e)
         {
             MarcaNegocio marcaNegocio = new MarcaNegocio();
@@ -38,87 +36,90 @@ namespace gestor_articulos
             }
             catch (Exception ex)
             {
-
                 MessageBox.Show(ex.ToString());
             }
-   
         }
-
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             Close();
         }
-
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            if(txtNombre.Text == "")
+            bool camposValidos = true;
+            
+            if (txtNombre.Text == "")
             {
                 errorProviderVacio.SetError(txtNombre, "Campo Requerido");
-            }
-            if(txtCodigo.Text == "")
-            {
-                errorProviderVacio.SetError(txtCodigo, "Campo Requerido");
-            }
-            if(txtPrecio.Text == "")
-            {
-                errorProviderVacio.SetError(txtPrecio, "Campo requerido");
-            }
-            if(txtDescripcion.Text == "")
-            {
-                errorProviderVacio.SetError(txtDescripcion, "Campo requerido");
+                camposValidos = false;
             }
             else
             {
-                Articulo articuloNuevo = new Articulo();
-                Imagenes imagenNueva = new Imagenes();
-                ArticuloNegocio articuloNegocio = new ArticuloNegocio();
-                ImagenNegocio imagenNegocio = new ImagenNegocio();
-                AccesoDatos accesoDatos = new AccesoDatos();
-
-                try
-                {
-                    articuloNuevo.CodigoArticulo = txtCodigo.Text;
-                    articuloNuevo.Nombre = txtNombre.Text;
-                    articuloNuevo.Descripcion = txtDescripcion.Text;
-                    articuloNuevo.Marca = (Marcas)cboMarca.SelectedItem;
-                    articuloNuevo.Categoria = (Categoria)cboCategoria.SelectedItem;
-                    articuloNuevo.Precio = decimal.Parse(txtPrecio.Text);
-
-                    int idCreado = articuloNegocio.agregarArticulo(articuloNuevo);
-
-                    imagenNueva.IdArticulo = idCreado;
-                    if (!(txtUrlImagen.Text == ""))
-                    {
-                        imagenNueva.UrlImagen = txtUrlImagen.Text;
-
-                        imagenNegocio.crearImagen(imagenNueva);
-
-                    }
-
-
-                    MessageBox.Show("Articulo agregado");
-                    Close();
-
-
-                }
-                catch (Exception ex)
-                {
-
-                    throw ex;
-                }
+                errorProviderVacio.SetError(txtNombre, ""); 
             }
-                     
+
+            if (txtCodigo.Text == "")
+            {
+                errorProviderVacio.SetError(txtCodigo, "Campo Requerido");
+                camposValidos = false;
+            }
+            else
+            {
+                errorProviderVacio.SetError(txtCodigo, "");
+            }
+            if (txtPrecio.Text == "")
+            {
+                errorProviderVacio.SetError(txtPrecio, "Campo Requerido");
+                camposValidos = false;
+            }
+            else
+            {
+                errorProviderVacio.SetError(txtPrecio, "");
+            }
+            if (txtDescripcion.Text == "")
+            {
+                errorProviderVacio.SetError(txtDescripcion, "Campo Requerido");
+                camposValidos = false;
+            }
+            else
+            {
+                errorProviderVacio.SetError(txtDescripcion, "");
+            }
+            if (!camposValidos)
+            {
+                return;
+            }
+            Articulo articuloNuevo = new Articulo();
+            Imagenes imagenNueva = new Imagenes();
+            ArticuloNegocio articuloNegocio = new ArticuloNegocio();
+            ImagenNegocio imagenNegocio = new ImagenNegocio();
+
+            try
+            {
+                articuloNuevo.CodigoArticulo = txtCodigo.Text;
+                articuloNuevo.Nombre = txtNombre.Text;
+                articuloNuevo.Descripcion = txtDescripcion.Text;
+                articuloNuevo.Marca = (Marcas)cboMarca.SelectedItem;
+                articuloNuevo.Categoria = (Categoria)cboCategoria.SelectedItem;
+                articuloNuevo.Precio = decimal.Parse(txtPrecio.Text);
+
+                int idCreado = articuloNegocio.agregarArticulo(articuloNuevo);
+
+                if (!string.IsNullOrWhiteSpace(txtUrlImagen.Text))
+                {
+                    imagenNueva.IdArticulo = idCreado;
+                    imagenNueva.UrlImagen = txtUrlImagen.Text;
+                    imagenNegocio.crearImagen(imagenNueva);
+                }
+                MessageBox.Show("Artículo agregado");
+                Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocurrió un error: " + ex.Message);
+            }
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void txtUrlImagen_Leave(object sender, EventArgs e)
         {
-
-
             if (!string.IsNullOrWhiteSpace(txtUrlImagen.Text)) 
             {
                 try
@@ -134,20 +135,15 @@ namespace gestor_articulos
             {
                 pbxNuevoArticulo.Load(urlPlaceHolder);
             }
-
         }
-
         private void txtPrecio_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)Keys.Back && e.KeyChar != '.')
             {
-
                 e.Handled = true;
             }
-
             else if (e.KeyChar == '.' && ((TextBox)sender).Text.Contains("."))
             {
-
                 e.Handled = true;
             }
         }

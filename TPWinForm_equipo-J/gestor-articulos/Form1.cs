@@ -29,7 +29,12 @@ namespace gestor_articulos
                 pictureBox.Load(urlPlaceHolder);
             }
         }
-        
+        private void ocultarColumnas()
+        {
+            dgvArticulos.Columns[0].Visible = false;
+            dgvImagenes.Columns[0].Visible = false;
+
+        }
         
         public Form1()
         {
@@ -91,8 +96,9 @@ namespace gestor_articulos
 
             cargarArticulos();
             cargarDesplegableCampo();
+            ocultarColumnas();
            
-            //pbxArticulo.Load(listaArticulos[0].Imagenes[0].UrlImagen);
+            
 
         }
 

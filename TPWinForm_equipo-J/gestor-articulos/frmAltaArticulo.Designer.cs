@@ -48,11 +48,9 @@
             this.pbxNuevoArticulo = new System.Windows.Forms.PictureBox();
             this.errorProviderVacio = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProviderNumero = new System.Windows.Forms.ErrorProvider(this.components);
-            this.errorProviderCaracteres = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pbxNuevoArticulo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProviderVacio)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProviderNumero)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProviderCaracteres)).BeginInit();
             this.SuspendLayout();
             // 
             // lblCodigo
@@ -115,7 +113,6 @@
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(136, 20);
             this.txtCodigo.TabIndex = 6;
-            //this.txtCodigo.Leave += new System.EventHandler(this.txtCodigo_Leave);
             // 
             // txtNombre
             // 
@@ -123,7 +120,6 @@
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(136, 20);
             this.txtNombre.TabIndex = 7;
-            //this.txtNombre.Leave += new System.EventHandler(this.txtNombre_Leave);
             // 
             // txtDescripcion
             // 
@@ -139,7 +135,6 @@
             this.txtPrecio.Size = new System.Drawing.Size(136, 20);
             this.txtPrecio.TabIndex = 9;
             this.txtPrecio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrecio_KeyPress);
-            //this.txtPrecio.Leave += new System.EventHandler(this.txtPrecio_Leave);
             // 
             // cboMarca
             // 
@@ -187,7 +182,6 @@
             this.label1.Size = new System.Drawing.Size(42, 13);
             this.label1.TabIndex = 14;
             this.label1.Text = "Imagen";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtUrlImagen
             // 
@@ -214,10 +208,6 @@
             // errorProviderNumero
             // 
             this.errorProviderNumero.ContainerControl = this;
-            // 
-            // errorProviderCaracteres
-            // 
-            this.errorProviderCaracteres.ContainerControl = this;
             // 
             // frmAltaArticulo
             // 
@@ -248,7 +238,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbxNuevoArticulo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProviderVacio)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProviderNumero)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProviderCaracteres)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -275,6 +264,5 @@
         private System.Windows.Forms.PictureBox pbxNuevoArticulo;
         private System.Windows.Forms.ErrorProvider errorProviderVacio;
         private System.Windows.Forms.ErrorProvider errorProviderNumero;
-        private System.Windows.Forms.ErrorProvider errorProviderCaracteres;
     }
 }

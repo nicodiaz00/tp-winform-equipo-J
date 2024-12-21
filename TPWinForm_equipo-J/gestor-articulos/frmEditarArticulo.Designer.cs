@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblCodigo = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblDescripcion = new System.Windows.Forms.Label();
@@ -48,8 +49,10 @@
             this.txtUrlImagen = new System.Windows.Forms.TextBox();
             this.btnAceptarEdicion = new System.Windows.Forms.Button();
             this.btnCancelarEdicion = new System.Windows.Forms.Button();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvImagenes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxEditarArticulo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblCodigo
@@ -110,7 +113,9 @@
             // 
             this.dgvImagenes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvImagenes.Location = new System.Drawing.Point(54, 350);
+            this.dgvImagenes.MultiSelect = false;
             this.dgvImagenes.Name = "dgvImagenes";
+            this.dgvImagenes.ReadOnly = true;
             this.dgvImagenes.RowHeadersWidth = 51;
             this.dgvImagenes.Size = new System.Drawing.Size(343, 105);
             this.dgvImagenes.TabIndex = 6;
@@ -226,6 +231,10 @@
             this.btnCancelarEdicion.UseVisualStyleBackColor = true;
             this.btnCancelarEdicion.Click += new System.EventHandler(this.btnCancelarEdicion_Click);
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // frmEditarArticulo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -257,6 +266,7 @@
             this.Load += new System.EventHandler(this.frmEditarArticulo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvImagenes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxEditarArticulo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -284,5 +294,6 @@
         private System.Windows.Forms.TextBox txtUrlImagen;
         private System.Windows.Forms.Button btnAceptarEdicion;
         private System.Windows.Forms.Button btnCancelarEdicion;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
