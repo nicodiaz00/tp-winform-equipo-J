@@ -194,7 +194,7 @@ namespace gestor_articulos
 
                 dgvArticulos.DataSource = listaFiltrada;
                 dgvImagenes.DataSource = listaFiltrada[0].Imagenes;
-                cargarImagen(pbxArticulo, listaFiltrada[0].Imagenes[0].UrlImagen);
+                //cargarImagen(pbxArticulo, listaFiltrada[0].Imagenes[0].UrlImagen);
             }
         }
         private void cboCampo_SelectedIndexChanged(object sender, EventArgs e)

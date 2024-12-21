@@ -84,7 +84,7 @@
             // 
             // pbxArticulo
             // 
-            this.pbxArticulo.Location = new System.Drawing.Point(734, 73);
+            this.pbxArticulo.Location = new System.Drawing.Point(725, 73);
             this.pbxArticulo.Name = "pbxArticulo";
             this.pbxArticulo.Size = new System.Drawing.Size(396, 445);
             this.pbxArticulo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
