@@ -31,14 +31,20 @@ namespace gestor_articulos
             dgv.DataSource = listadoImagen;
             dgv.Refresh();
 
-            if(dgv.CurrentRow != null)
+            if (dgv.CurrentRow != null)
             {
-                picturebox.Load(listadoImagen[0].UrlImagen);
-            }
-            else
-            {
-                picturebox.Load(urlPlaceHolder);
-            }
+                try
+                {
+                    picturebox.Load(listadoImagen[0].UrlImagen);
+                }
+                catch
+                {
+
+                    picturebox.Load(urlPlaceHolder);
+                }
+
+
+            } 
             
         }
 
@@ -113,9 +119,43 @@ namespace gestor_articulos
         private void btnAceptarEdicion_Click(object sender, EventArgs e)
         {
             ArticuloNegocio articuloNegocio = new ArticuloNegocio();
+            bool error = true;
+            if(txtNombre.Text == "")
+            {
+                errorProvider1.SetError(txtNombre, "No puede quedar vacio");
+                error = false;
+            }
+            else
+            {
+                errorProvider1.SetError(txtNombre, "");
+            }
+            if (txtCodigo.Text == "")
+            {
+                errorProvider1.SetError(txtCodigo, "No puede quedar vacio");
+                error = false;
+            }
+            else
+            {
+                errorProvider1.SetError(txtCodigo, "");
+            }
+            if(txtPrecio.Text == "")
+            {
+                errorProvider1.SetError(txtPrecio, "No puede quedar vacio");
+                error = false;
+            }
+            else
+            {
+                errorProvider1.SetError(txtPrecio, "");
+            }
+            if (!error)
+            {
+                return;
+            }
+
             try
             {
                 articulo1.Nombre = txtNombre.Text;
+                articulo1.CodigoArticulo = txtCodigo.Text;
                 articulo1.Descripcion = txtDescripcion.Text;
                 articulo1.Categoria.Id = (int)cboCategoria.SelectedValue;
                 articulo1.Marca.Id = (int)cboMarca.SelectedValue;
@@ -181,6 +221,17 @@ namespace gestor_articulos
 
             }
             
+        }
+        private void txtPrecio_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)Keys.Back && e.KeyChar != '.')
+            {
+                e.Handled = true;
+            }
+            else if (e.KeyChar == '.' && ((TextBox)sender).Text.Contains("."))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

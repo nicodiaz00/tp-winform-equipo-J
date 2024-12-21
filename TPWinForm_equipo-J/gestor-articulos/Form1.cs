@@ -34,8 +34,7 @@ namespace gestor_articulos
             dgvArticulos.Columns[0].Visible = false;
             dgvImagenes.Columns[0].Visible = false;
 
-        }
-        
+        }  
         public Form1()
         {
             InitializeComponent();
@@ -50,7 +49,11 @@ namespace gestor_articulos
                 dgvArticulos.DataSource = listaArticulos;
                 dgvImagenes.DataSource = listaArticulos[0].Imagenes;
 
-                cargarImagen(pbxArticulo, listaArticulos[0].Imagenes[0].UrlImagen);
+                if(listaArticulos[0].Imagenes.Count() > 0)
+                {
+                    cargarImagen(pbxArticulo, listaArticulos[0].Imagenes[0].UrlImagen);
+                }
+                //cargarImagen(pbxArticulo, listaArticulos[0].Imagenes[0].UrlImagen);
             }
             catch (Exception ex)
             {
@@ -88,9 +91,7 @@ namespace gestor_articulos
                     cboCriterio.Items.Add("Termina con");
                     break;
             }
-
         }
-
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -167,7 +168,6 @@ namespace gestor_articulos
                     {
                         listaFiltrada.Add(item);
                     }
-
                 }
 
                 if(listaFiltrada.Count > 0)
@@ -196,54 +196,82 @@ namespace gestor_articulos
                 dgvImagenes.DataSource = listaFiltrada[0].Imagenes;
                 cargarImagen(pbxArticulo, listaFiltrada[0].Imagenes[0].UrlImagen);
             }
-
         }
-
         private void cboCampo_SelectedIndexChanged(object sender, EventArgs e)
         {
             string opcionCampo = cboCampo.Text.ToString();
-
-            
+          
                 cargarDesplegableCriterio(opcionCampo);
-                btnBusquedaAvanzada.Enabled = true;
-            
-            
+                btnBusquedaAvanzada.Enabled = true;               
         }
-
         private void btnBusquedaAvanzada_Click(object sender, EventArgs e)
         {
             List<Articulo> listaFiltrada = new List<Articulo>();
             ArticuloNegocio articuloNegocio = new ArticuloNegocio();
+            bool error = true;
+
+            if(cboCampo.SelectedItem == null)
+            {
+                errorProviderPrincipal.SetError(cboCampo, "Elija un campo");
+                error = false;
+            }
+            else
+            {
+                errorProviderPrincipal.SetError(cboCampo, "");
+            }if(cboCriterio.SelectedItem == null)
+            {
+                errorProviderPrincipal.SetError(cboCriterio, "Elija un criterio");
+                error = false;
+            }
+            else
+            {
+                errorProviderPrincipal.SetError(cboCriterio, "");
+            }
+            if(cboCampo.SelectedItem != null)
+            {
+                if (cboCampo.SelectedItem.ToString() == "Precio")
+                {
+                    if(txtBusquedaAvanzada.Text == "")
+                    {
+                        errorProviderPrincipal.SetError(txtBusquedaAvanzada, "Ingrese un valor");
+                        error = false;
+                    }
+                    else
+                    {
+                        errorProviderPrincipal.SetError(txtBusquedaAvanzada, "");
+                    }
+                }
+            }
+            if (!error)
+            {
+                return;
+            }
             try
             {
                 string campo = cboCampo.SelectedItem.ToString();
                 string criterio = cboCriterio.SelectedItem.ToString();
                 string filtro = txtBusquedaAvanzada.Text;
 
-
                 listaFiltrada = articuloNegocio.busquedaAvanzada(campo, criterio, filtro);
-
                 dgvArticulos.DataSource = null;
                 dgvArticulos.DataSource = listaFiltrada;
+                txtBusquedaAvanzada.Text = "";
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
-                throw;
+                throw ex;
             }
             ;
 
         }
-
         private void btnEliminar_Click(object sender, EventArgs e)
         {
            
             ArticuloNegocio articuloNegocio = new ArticuloNegocio();
             ImagenNegocio imagenNegocio = new ImagenNegocio();
-            
 
-            Articulo articulo = new Articulo();
-            
+            Articulo articulo = new Articulo();     
 
             try
             {
@@ -263,7 +291,6 @@ namespace gestor_articulos
             }
 
         }
-
         private void btnDetalle_Click(object sender, EventArgs e)
         {
             Articulo articuloDetalle = new Articulo();
@@ -272,9 +299,22 @@ namespace gestor_articulos
             
             frmDetalle frmDetalle = new frmDetalle(articuloDetalle);
             frmDetalle.ShowDialog();
+           
+        }
 
-            
-            
+        private void txtBusquedaAvanzada_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(cboCampo.SelectedItem.ToString() == "Precio")
+            {
+                if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)Keys.Back && e.KeyChar != '.')
+                {
+                    e.Handled = true;
+                }
+                else if (e.KeyChar == '.' && ((TextBox)sender).Text.Contains("."))
+                {
+                    e.Handled = true;
+                }
+            }
         }
     }
 }

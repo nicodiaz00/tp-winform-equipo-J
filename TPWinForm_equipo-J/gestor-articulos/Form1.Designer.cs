@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.dgvArticulos = new System.Windows.Forms.DataGridView();
             this.dgvImagenes = new System.Windows.Forms.DataGridView();
             this.pbxArticulo = new System.Windows.Forms.PictureBox();
@@ -46,9 +47,11 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnDetalle = new System.Windows.Forms.Button();
             this.lblImagenes = new System.Windows.Forms.Label();
+            this.errorProviderPrincipal = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvArticulos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvImagenes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxArticulo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderPrincipal)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvArticulos
@@ -56,6 +59,7 @@
             this.dgvArticulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvArticulos.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgvArticulos.Location = new System.Drawing.Point(12, 73);
+            this.dgvArticulos.MultiSelect = false;
             this.dgvArticulos.Name = "dgvArticulos";
             this.dgvArticulos.ReadOnly = true;
             this.dgvArticulos.RowHeadersWidth = 51;
@@ -186,6 +190,7 @@
             this.txtBusquedaAvanzada.Name = "txtBusquedaAvanzada";
             this.txtBusquedaAvanzada.Size = new System.Drawing.Size(121, 20);
             this.txtBusquedaAvanzada.TabIndex = 13;
+            this.txtBusquedaAvanzada.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBusquedaAvanzada_KeyPress);
             // 
             // btnBusquedaAvanzada
             // 
@@ -226,6 +231,10 @@
             this.lblImagenes.TabIndex = 17;
             this.lblImagenes.Text = "Imagenes";
             // 
+            // errorProviderPrincipal
+            // 
+            this.errorProviderPrincipal.ContainerControl = this;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -257,6 +266,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvArticulos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvImagenes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxArticulo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderPrincipal)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -282,6 +292,7 @@
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnDetalle;
         private System.Windows.Forms.Label lblImagenes;
+        private System.Windows.Forms.ErrorProvider errorProviderPrincipal;
     }
 }
 
