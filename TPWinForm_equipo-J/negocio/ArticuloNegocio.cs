@@ -144,8 +144,8 @@ namespace negocio
                         case "Termina con":
                             consulta += "A.Nombre like '%" + filtro + "'";
                             break;
-                        case "Contiene":
-                            consulta += "% A.Nombre like '%" + filtro + "%'";
+                        default:
+                            consulta += " A.Nombre like '%" + filtro + "%'";
                             break;
                     }
 
@@ -160,8 +160,8 @@ namespace negocio
                         case "Termina con":
                             consulta += "A.Descripcion like '%" + filtro + "'";
                             break;
-                        case "Contiene":
-                            consulta += "% A.Descripcion like '%" + filtro + "%'";
+                        default:
+                            consulta += "A.Descripcion like '%" + filtro + "%'";
                             break;
                     }
                 }
