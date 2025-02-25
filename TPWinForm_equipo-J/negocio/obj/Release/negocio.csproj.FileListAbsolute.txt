@@ -1,0 +1,9 @@
+C:\Users\nico\Documents\c#\experiencia-universidad\tp-winform-equipo-J\TPWinForm_equipo-J\negocio\bin\Release\negocio.dll
+C:\Users\nico\Documents\c#\experiencia-universidad\tp-winform-equipo-J\TPWinForm_equipo-J\negocio\bin\Release\negocio.pdb
+C:\Users\nico\Documents\c#\experiencia-universidad\tp-winform-equipo-J\TPWinForm_equipo-J\negocio\bin\Release\dominio.dll
+C:\Users\nico\Documents\c#\experiencia-universidad\tp-winform-equipo-J\TPWinForm_equipo-J\negocio\bin\Release\dominio.pdb
+C:\Users\nico\Documents\c#\experiencia-universidad\tp-winform-equipo-J\TPWinForm_equipo-J\negocio\obj\Release\negocio.csproj.AssemblyReference.cache
+C:\Users\nico\Documents\c#\experiencia-universidad\tp-winform-equipo-J\TPWinForm_equipo-J\negocio\obj\Release\negocio.csproj.CoreCompileInputs.cache
+C:\Users\nico\Documents\c#\experiencia-universidad\tp-winform-equipo-J\TPWinForm_equipo-J\negocio\obj\Release\negocio.csproj.Up2Date
+C:\Users\nico\Documents\c#\experiencia-universidad\tp-winform-equipo-J\TPWinForm_equipo-J\negocio\obj\Release\negocio.dll
+C:\Users\nico\Documents\c#\experiencia-universidad\tp-winform-equipo-J\TPWinForm_equipo-J\negocio\obj\Release\negocio.pdb

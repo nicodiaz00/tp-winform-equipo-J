@@ -61,13 +61,15 @@ namespace gestor_articulos
 
                 cboCategoria.DataSource = categoriaNegocio.listarCategoria();
                 cboCategoria.ValueMember = "Id";
-                cboCategoria.DisplayMember = "descripcionCategoria";
+                cboCategoria.DisplayMember = "DescripcionCategoria";
 
                 txtNombre.Text = articulo1.Nombre;
                 txtCodigo.Text = articulo1.CodigoArticulo;
                 txtDescripcion.Text = articulo1.Descripcion;
                 txtPrecio.Text = articulo1.Precio.ToString();
                 cboMarca.SelectedValue = articulo1.Marca.Id;
+                cboMarca.DisplayMember = articulo1.Marca.Descripcion;
+                cboCategoria.SelectedValue= articulo1.Categoria.Id;
                 cboCategoria.DisplayMember = articulo1.Categoria.DescripcionCategoria;
                               
                 if (articulo1.Imagenes.Count != 0)
